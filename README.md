@@ -14,7 +14,7 @@ Academiejaar: 2019-2020
 
 ### Vereisten
 
-0. Have $\LaTeX$ installed.
+0. Zorg ervoor dat LaTeX geinstalleerd is.
 
 ### Compiling
 
