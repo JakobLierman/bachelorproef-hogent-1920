@@ -1,0 +1,82 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'user-experience-factoren.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%%
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{340.99999237bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.23167158)%
+    \put(0.75999179,0.56050117){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{U}\textbf{s}\textbf{e}\textbf{r}\textbf{ }\textbf{e}\textbf{x}\textbf{p}\textbf{e}\textbf{r}\textbf{i}\textbf{e}\textbf{n}\textbf{c}\textbf{e}}}}%
+    \put(0.42299032,0.59182258){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{I}\textit{n}\textit{t}\textit{e}\textit{r}\textit{a}\textit{c}\textit{t}\textit{i}\textit{e}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{user-experience-factoren.pdf}}%
+    \put(0,0.28067566){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{G}\textbf{e}\textbf{b}\textbf{r}\textbf{u}\textbf{i}\textbf{k}\textbf{e}\textbf{r}}}}%
+    \put(0,0.91843519){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{S}\textbf{o}\textbf{c}\textbf{i}\textbf{a}\textbf{a}\textbf{l}}}}%
+    \put(0,1.20238827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}\textbf{u}\textbf{l}\textbf{t}\textbf{u}\textbf{r}\textbf{e}\textbf{e}\textbf{l}}}}%
+    \put(0.00084457,0.52064047){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}\textbf{o}\textbf{n}\textbf{t}\textbf{e}\textbf{x}\textbf{t}}}}%
+    \put(0,0.71953783){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{r}\textbf{o}\textbf{d}\textbf{u}\textbf{c}\textbf{t}}}}%
+    \put(0.00035191,1.14319765){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Mode}}}%
+    \put(0.00035191,1.10096891){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Gewoontes}}}%
+    \put(0.00035191,1.05874018){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Taal}}}%
+    \put(0.00035191,1.01651143){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Religie}}}%
+    \put(0.00035191,0.9742827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- ...}}}%
+    \put(0.00095015,0.85956129){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Tijdsdruk}}}%
+    \put(0.00095015,0.81733255){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Prestatiedruk}}}%
+    \put(0.00095015,0.77510381){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- ...}}}%
+    \put(0.00024633,0.66013607){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Bruikbaarheid}}}%
+    \put(0.00024633,0.61790733){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Functionaliteit}}}%
+    \put(0.00024633,0.57567859){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- ...}}}%
+    \put(0,0.46292786){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Tijd}}}%
+    \put(0,0.42069912){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Locatie}}}%
+    \put(0,0.37847038){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Temperatuur}}}%
+    \put(0,0.33624164){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- ...}}}%
+    \put(0.00109091,0.22194252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Waarden}}}%
+    \put(0.00109091,0.17971378){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Verwachtingen}}}%
+    \put(0.00109091,0.13748505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Motivatie}}}%
+    \put(0.00109091,0.0952563){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Leeftijd}}}%
+    \put(0.00109091,0.05302757){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- Persoonlijkheid}}}%
+    \put(0.00109091,0.01079883){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{- ...}}}%
+  \end{picture}%
+\endgroup%
