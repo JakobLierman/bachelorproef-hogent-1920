@@ -21,9 +21,13 @@
 *.dvi
 *-converted-to.*
 # these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
+*.ps
+*.eps
 *.pdf
+# Unignore in img folder
+!**/img/*.ps
+!**/img/*.eps
+!**/img/*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
