@@ -266,17 +266,119 @@ Ook consistentie is belangrijk bij zowel learnability als UX design. Zoals~\text
 \section{Onboarding}
 \label{sec:onboarding}
 
-% TODO
-% 8 onboarding ux technieken
+Onboarding is slechts één element van de velen die de user experience in software kunnen beïnvloeden. Het is echter wel één van de bekendste en belangrijkste. Voorgaand onderzoek toonde  aan hoe onboarding een positieve invloed op de tevredenheid van de gebruiker over de applicatie~\autocite{Cardoso2017}. Onboarding vindt plaats wanneer de gebruiker de applicatie voor de eerste maal opstart en gebruikt. Het is een soort van gids die de gebruiker de belangrijkste functionaliteiten van de applicatie laat zijn. Vaak wordt onboarding ook ingezet voor het verkrijgen van essentiële informatie van de gebruiker, bijvoorbeeld wanneer deze een account moet aanmaken.
+
+Een onboarding kan de ervaring van de gebruiker zeer positief beïnvloeden. Een slecht geïmplementeerde onboarding kan de ervaring weliswaar heel snel negatief beïnvloeden. Er mag dus zeker niet overdreven worden.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.7\columnwidth]{onboarding-gone-wrong}
+    \caption{Bij de ingebruikname van de nieuwe~\href{https://www.apple.com/ipad-pro/}{Apple iPad Pro} werd de onboarding onderbroken door een programmeerfout}
+    \label{fig:onboarding:fout}
+\end{figure}
+
+\subsection{Welkomstberichten}
+\label{sec:onboarding:welkomstberichten}
+
+\textcite{Balboni2018} groepeerde verschillende implementaties van onboarding in acht UI/UX patronen. Wanneer je je net registreerde of wanneer je een nieuwe app open doet op een mobiel toestel heb je zeker al eens een welkomstbericht ontvangen. Negen op tien onboarding-ervaringen starten met een bericht waarin ze de nieuwe klant verwelkomen. Vaak wordt dit bericht ondersteund door een CTA-knop (Call To Action) waarin men bijvoorbeeld de gebruiker kan uitnodigen om deel te nemen aan een rondleiding doorheen de applicatie.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.3\columnwidth]{onboarding-welkom}
+    \caption{Een welkomstbericht na registratie bij~\href{https://www.headspace.com/}{Headspace}}
+    \label{fig:onboarding:welkom}
+\end{figure}
+
+\subsection{Rondleidingen}
+\label{sec:onboarding:rondleindingen}
+
+Een rondleiding doorheen de applicatie toont alle belangrijke elementen en functionaliteiten even aan met een beknopte uitleg. De rondleiding moet zich echter beperken tot de belangrijkste onderdelen zodat de eindgebruiker zich niet verveeld of geïrriteerd voelt. Bij de rondleiding maakt men veelal gebruik van tooltips (zie figuur~\ref{fig:onboarding:rondleiding}).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.3\columnwidth]{onboarding-tooltip}
+    \caption{Een tooltip om de zoekfunctie te benadrukken in de~\href{https://messages.google.com/}{Messages} applicatie van Google}
+    \label{fig:onboarding:rondleiding}
+\end{figure}
+
+\subsection{Voortgangsindicatoren}
+\label{sec:onboarding:voortgang}
+
+De mens wil opdrachten voltooien. Zeker wanneer men de voortgang kan opvolgen. Doorheen het volledige onboarding-proces kan de voortgang dus weergegeven worden in voortgangsbalken of voortgangsstippen (zie figuur~\ref{fig:onboarding:voortgang}).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\columnwidth]{cardify-onboarding-app}
+    \caption{Weergave van resterende stappen bij de registratie in de Cardify applicatie}
+    \label{fig:onboarding:voortgang}
+\end{figure}
+
+\subsection{Checklists}
+\label{sec:onboarding:checklists}
+
+Checklists zetten net zoals voortgangsindicatoren aan tot het voltooien van opdrachten. Het afwerken van een item in de checklist geeft de gebruiker een gevoel van voldoening. Checklists worden naar gewoonte ingezet voor complexere taken met meerdere stappen.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.6\columnwidth]{onboarding-checklist}
+    \caption{Checklist bij het vervolledigen van een profiel op~\href{https://www.linkedin.com/}{LinkedIn}}
+    \label{fig:onboarding:checklist}
+\end{figure}
+
+\subsection{Hotspots}
+\label{sec:onboarding:hotspots}
+
+Hotspots zijn gelijkaardig aan de tooltips uit de rondleidingen (zie hoofdstuk~\ref{sec:onboarding:rondleindingen}). De tooltips zijn niet vrijblijvend, een gebruiker die snel aan de slag wil zal hier dus snel door klikken zonder veel informatie opgenomen te hebben. Dot hotspots speel hierop in door zones te creëren waarin de gebruiker kan klikken om meer informatie te verkrijgen over dat UI-element of die functionaliteit. Doordat deze hotspots vrijblijvend zijn verhinderen ze de workflow van de gebruiker niet.
+
+\begin{figure}[h!]
+    \centering
+    \subfloat[Hotspot toont aan waar actie mogelijk is]{{\includegraphics[width=.40\columnwidth]{onboarding-hotspot-1}}}
+    \qquad
+    \subfloat[Actieve hotspot]{{\includegraphics[width=.40\columnwidth]{onboarding-hotspot-2}}}
+    \caption{Hotspots bij ingebruikname van~\href{https://www.dropbox.com/paper}{Dropbox Paper}}
+    \label{fig:onboarding:hotspots}
+\end{figure}
+
+\subsection{Actie-gedreven tooltips}
+\label{sec:onboarding:actie-tooltips}
+
+Actie-gedreven tooltips hebben veel weg van de tooltips uit hoofdstuk~\ref{fig:onboarding:rondleinding}. Het verschil zit hem in de interactie ermee. Een eenvoudige tooltip bevat een omschrijving of uitleg en een knop om de tooltip te sluiten of om naar de volgende te gaan in de rondleiding. Bij actie-gedreven tooltips moet men een kleine opdracht uitvoeren, zoals op een knop klikken of tekst invoeren. De bedoeling hiervan is dat men bijleert hoe de applicatie in zijn werk gaat door deze ook echt te gebruiken.
+
+\subsection{Uitgestelde accountcreatie}
+\label{sec:onboarding:uitgestelde-accountcreatie}
+
+Uitgestelde accountcreatie stelt, zoals je uit de benaming al kon afleiden, de accountcreatie uit. Hierbij worden eerst de functionaliteiten van de software aangehaald voordat de gebruiker zicht hoeft te registreren. Dit beperkt het aantal velden dat de gebruiker moet invullen bij het eerste contact met de applicatie. De gebruiker moet nadien wel in de juiste richting geduwd worden zodat deze toch de registratie voltooid.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.3\columnwidth]{onboarding-uitstel}
+    \caption{\href{https://www.duolingo.com/}{Duolingo} vereist geen account voor de werking van de applicatie, er worden op bepaalde momenten wel meldingen gegeven van de voordelen van een account}
+    \label{fig:onboarding:uitgestelde-accountcreatie}
+\end{figure}
+
+\subsection{Gepersonaliseerde onboarding}
+\label{sec:onboarding:gepersonaliseerd}
+
+Gepersonaliseerde onboarding zorgt ervoor dat de gebruiker bij de eerste ingebruikname van de applicatie meteen een gepersonaliseerde software voor handen heeft. Dit kan door bijvoorbeeld in een kennismakingsformulier de interesses van de gebruiker op te vragen zodat men enkel relevante inhoud krijgt.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.3\columnwidth]{onboarding-personal}
+    \caption{Een vragenlijst om de verdere ervaring bij \href{https://www.headspace.com/}{Headspace} te personaliseren}
+    \label{fig:onboarding:gepersonaliseerd}
+\end{figure}
+
+Zoals~\textcite{Strahm2018} verduidelijkten, is de creatie van een onboardingsflow verschillend voor elke applicatie. Het ontwerpen zelf is een iteratief proces waarbij men afwisselt tussen implementatie en testen. Hier komt laboratory testing zeker van pas (zie hoofdstuk~\ref{sec:usability-testing:lab-field-testing}).
 
 \section{In-app training}
 \label{sec:in-app-training}
 
 % TODO
-% Voorbeeld grote tekst ouderen
-% Voorbeeld arabisch
 
 \section{De verschillen tussen UX en UI}
 \label{sec:ux-vs-ui}
 
 % TODO
+
+% Voorbeeld grote tekst ouderen
+% Voorbeeld arabisch
