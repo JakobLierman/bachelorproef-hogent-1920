@@ -219,7 +219,49 @@ In deze vragenlijst bevinden zich twee vragen die testen op learnability in plaa
 
 Er is nog steeds een verschil tussen hoe bruikbaar een applicatie is en hoe goed de eindgebruiker deze applicatie kent. \textcite{Coyle2016} merkten op dat naast de bruikbaarheid (usability) van hun ontwerpen, er ook moest gekeken worden naar de leerbaarheid (learnability) ervan. Na een hele reeks testen en vragenlijsten met gebruikers uit de doelgroep kon men effectief afleiden dat, indien de leerbaarheid van een applicatie ook in acht genomen wordt, men diepere gebruiksproblemen gemakkelijker kon vaststellen. Bij hun onderzoek maakten ze gebruik van onder andere open vragen, de System Usability Scale (zie hoofdstuk~\ref{sec:usability-testing:sus}) en vertrouwensratings gebruikmakend van de Likert schaal.
 
-% TODO
+In onderzoek van~\textcite{Haramundanis2001} werd beschreven welke stappen men moest ondernemen om leerbare materie te ontwikkelen:
+\begin{itemize}
+    \item Analytisch denken
+    \item Logische ontwikkeling
+    \item Usability testen
+    \item Consistentie van aanpak
+    \item Visualisatie
+\end{itemize}
+
+Visualisatie is hierbij een belangrijk onderdeel. In de beginjaren van de personal computer moest men nog door de mappenstructuur van het besturingssysteem bladeren met behulp van de CLI (Command Line Interface) (zie figuur~\ref{fig:learnability:cli}). De leercurve was toen uiteraard zeer steil waardoor de computer een product was waarmee weinig mensen mee overweg konden. Tegenwoordig kan iedereen door zijn of haar mappen bladeren in een besturingssysteem door middel van een GUI (Graphical User Interface) (zie figuur~\ref{fig:learnability:mappen}). Deze verandering bij het gebruik van de personal computer zorgde er ook voor dat het gebruik an een computer makkelijk aan te leren was voor nieuwe gebruikers. Deze evolutie in het ontwerp van software zorgde ervoor dat bijna elk modern huishouden een computer ter beschikking heeft.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.6\columnwidth]{learnability-cli}
+    \caption{De Command Line Interface wordt nog steeds ondersteund op een modern besturingssysteem (hier: \href{https://www.apple.com/macos/}{macOS})}
+    \label{fig:learnability:cli}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=.6\columnwidth]{learnability-mappen-1}
+    \includegraphics[width=.6\columnwidth]{learnability-mappen-2}
+    \caption{Bladeren door de mappenstructuur in Finder op \href{https://www.apple.com/macos/}{macOS}}
+    \label{fig:learnability:mappen}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\columnwidth]{consistency-sketch}
+    \caption{Het belang van consistentie doorheen UI-elementen}
+    \label{fig:learnability:consistentie}
+\end{figure}
+
+Ook consistentie is belangrijk bij zowel learnability als UX design. Zoals~\textcite{Nikolov2017} aangeeft is bestaan er vier verschillende types van consistentie: visuele, functionele, interne en externe consistentie. De visuele consistentie leunt aan bij het hiervoor genoemde visualisatie. Interne consistentie is een combinatie van visuele en functionele consistentie. Bij het behouden van interne consistentie kan men makkelijk een nieuwe functionaliteit of UI-element toevoegen aan bestaande software zonder dat eindgebruikers opnieuw moeten bijleren hoe de applicatie werkt. Externe consistentie trekt de lijn door naar andere systemen en producten. Bij Cardify blijft men consistent doorheen hun volledige aanbod aan producten (zie figuur~\ref{fig:learnability:consistentie-cardify}). Zo zal een gebruiker van de mobiele applicatie zich snel vertrouwd voelen met de verscheidene webplatformen die Cardify te bieden heeft. Vaak gebruikt een bedrijf ook design guidelines. Grote bedrijven zoals Google gaan daarin natuurlijk wat verder. Zo ontwikkelde Google het \href{https://material.io/}{Material Design} systeem. Bij Cardify kan je de design guidelines vinden op \url{https://getcardify.com/brand/}.
+
+
+\begin{figure}
+    \centering
+    \subfloat[Web-platform]{{\includegraphics[width=.65\columnwidth]{cardify-consistency-web}}}
+    \qquad
+    \subfloat[Mobiele applicatie]{{\includegraphics[width=.29\columnwidth]{cardify-consistency-app}}}
+    \caption{Consistentie doorheen Cardify producten}
+    \label{fig:learnability:consistentie-cardify}
+\end{figure}
 
 \section{Onboarding}
 \label{sec:onboarding}
