@@ -11,6 +11,17 @@
 % Packages van de student
 \usepackage{subcaption}
 \usepackage{pdfpages}
+\usepackage[overload]{textcase}
+\usepackage[acronym]{glossaries}
+
+\makeglossaries
+
+\newacronym{acr:ux}{UX}{user experience}
+\newacronym{acr:ui}{UI}{User Interface}
+\newacronym{acr:uxd}{UXD}{User Experience Design}
+\newacronym{acr:gui}{GUI}{Grafische User Interface}
+\newacronym{acr:cli}{CLI}{Command Line Interface}
+\newacronym{acr:sus}{SUS}{System Usability Scale}
 
 %%---------- Documenteigenschappen ---------------------------------------------
 % TODO: Vul dit aan met je eigen info:
@@ -81,6 +92,7 @@
 
 \listoffigures
 \listoftables
+\printacronyms
 
 % Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
 % hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.

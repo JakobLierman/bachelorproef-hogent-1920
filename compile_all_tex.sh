@@ -6,6 +6,7 @@ set -o pipefail # force exit code of a pipeline to non-zero, if one of commands 
 
 compiler="xelatex"
 biber_cmd="biber --quiet"
+glossaries_cmd="makeglossaries"
 
 # tmp_extensions: these files will be removed after a successful run
 tmp_extensions="aux,bcf,bbl,blg,idx,lof,log,lot,nav,out,run.xml,snm,synctex.gz,toc,vrb"
@@ -121,6 +122,18 @@ compile_file() {
     if [ $exitcode -eq 0 ]; then
         $compiler_cmd -jobname="$outputname" "$inputname" || exitcode=$?
         compilecount=1
+    fi
+    # run makeglossaries
+    if [ $exitcode -eq 0 ]; then
+        $glossaries_cmd "$outputname" || exitcode=$?
+        compilecount=1
+            # compile 2nd time, only if glossaries was successful
+            if [ $exitcode -eq 0 ]; then
+                $compiler_cmd -jobname="$outputname" "$inputname" || exitcode=$?
+                compilecount=2
+            else
+                error "makeglossaries failed, might have something to do with perl"
+            fi
     fi
     # run biber, only if necessary
     if [ $exitcode -eq 0 -a -f "${outputname}.bcf" ]; then

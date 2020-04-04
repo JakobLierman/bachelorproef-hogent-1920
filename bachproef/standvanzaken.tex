@@ -5,24 +5,24 @@
 
 Zoals uit het vorig hoofdstuk kan worden afgeleid, zal deze scriptie onderzoek doen naar de implementatie en effecten van bepaalde UX en UI-elementen. Maar alvorens van start te gaan hiermee zal eerst gekeken worden naar wat de algemene rol is van UX en UI in software-ontwikkeling.
 
-\section{User experience in software}
+\section{\acrlong{acr:ux} in software}
 \label{sec:user-experience-in-software}
 
-In het traditioneel proces van het ontwikkelen van software staat de functionaliteit centraal. Ontwikkelaars bekijken alle vereisten en starten met de belangrijkste. Functionaliteit krijgt hier doorgaans de voorkeur. \textcite{Harutyunyan2019} stelden vast dat dit de laatste jaren echter aan het wijzigen is. De traditionele softwareontwikkeling is plaats aan het maken voor softwareontwikkeling met user experience in het achterhoofd. Dit fenomeen noemt men User Experience Design of kortweg UXD. Omdat de term UXD in de literatuur nog sterk evolueert, heeft deze nog geen algemeen aanvaarde definitie. Men kan stellen dat user experience design een proces is waarbij men gebruiksgedrag zal manipuleren aan de hand van de bruikbaarheid en wenselijkheid in de interactie met een product.
+In het traditioneel proces van het ontwikkelen van software staat de functionaliteit centraal. Ontwikkelaars bekijken alle vereisten en starten met de belangrijkste. Functionaliteit krijgt hier doorgaans de voorkeur. \textcite{Harutyunyan2019} stelden vast dat dit de laatste jaren echter aan het wijzigen is. De traditionele softwareontwikkeling is plaats aan het maken voor softwareontwikkeling met~\acrlong{acr:ux} in het achterhoofd. Dit fenomeen noemt men~\acrfull{acr:uxd} of kortweg~\acrshort{acr:uxd}. Omdat de term~\acrshort{acr:uxd} in de literatuur nog sterk evolueert, heeft deze nog geen algemeen aanvaarde definitie. Men kan stellen dat~\acrlong{acr:uxd} een proces is waarbij men gebruiksgedrag zal manipuleren aan de hand van de bruikbaarheid en wenselijkheid in de interactie met een product.
 
-Men doet al lang onderzoek naar user experience in software. Zo toonden~\textcite{Carroll1984} het belang van training in complexe systemen al aan anno 1984. Deze training van gebruikers behandelen we later in dit hoofdstuk.
+Men doet al lang onderzoek naar~\acrlong{acr:ux} in software. Zo toonden~\textcite{Carroll1984} het belang van training in complexe systemen al aan anno 1984. Deze training van gebruikers behandelen we later in dit hoofdstuk.
 
 \begin{figure}[h]
     \centering
     \def\svgwidth{.8\columnwidth}
     \input{./img/user-experience-waarom-wat-hoe.pdf_tex}
-    \caption{Het waarom, wat en hoe van user experience design}
+    \caption{Het waarom, wat en hoe van~\acrlong{acr:uxd}}
     \label{fig:ux-waarom-wat-hoe}
 \end{figure}
 
-Een UX-designer bekijkt het product niet enkel als het product op zich. Deze persoon analyseert hoe de eindgebruiker het product in gebruik neemt en past het product aan zodat de gebruikservaring optimaal is. De designer neemt het \textit{waarom}, \textit{wat} en \textit{hoe} van productgebruik in acht (zie figuur~\ref{fig:ux-waarom-wat-hoe})~\autocite{Hassenzahl2013}. De \textit{wat} in productgebruik verwijst gewoonlijk naar wat een gebruiker kan doen door middel van het product. Dit is bijvoorbeeld ``een foto maken'' of ``een spel kopen''. De \textit{hoe} staat dan ook effectief voor de gebruiker het product gebruikt. Dit is meer op een operationeel niveau zoals het navigeren door software met behulp van knoppen en andere attributen. De designer zal zich voornamelijk focussen op het ``hoe'' van het productgebruik. Dit omvat de gegeven functionaliteit op een aantrekkelijke manier zeer toegankelijk maken.
+Een~\acrshort{acr:ux}-designer bekijkt het product niet enkel als het product op zich. Deze persoon analyseert hoe de eindgebruiker het product in gebruik neemt en past het product aan zodat de gebruikservaring optimaal is. De designer neemt het \textit{waarom}, \textit{wat} en \textit{hoe} van productgebruik in acht (zie figuur~\ref{fig:ux-waarom-wat-hoe})~\autocite{Hassenzahl2013}. De \textit{wat} in productgebruik verwijst gewoonlijk naar wat een gebruiker kan doen door middel van het product. Dit is bijvoorbeeld ``een foto maken'' of ``een spel kopen''. De \textit{hoe} staat dan ook effectief voor de gebruiker het product gebruikt. Dit is meer op een operationeel niveau zoals het navigeren door software met behulp van knoppen en andere attributen. De designer zal zich voornamelijk focussen op het ``hoe'' van het productgebruik. Dit omvat de gegeven functionaliteit op een aantrekkelijke manier zeer toegankelijk maken.
 
-\section{Belangrijke factoren bij user experience}
+\section{Belangrijke factoren bij~\acrlong{acr:ux}}
 \label{sec:belangrijke-factoren-bij-user-experience}
 
 Er zijn talloze factoren die ervoor zorgen dat men op een verschillende manier naar dezelfde applicatie moet kijken. Zo zijn de gebruikers allemaal verschillend, maar er moet ook rekening gehouden worden met verschillende omgevingen, culturen, enz. Een toestel om parameters op te meten bij schepen moet dus waterbestendig zijn. Een kindvriendelijke tablet is best schokbestendig. Een applicatie om notities te maken bij vergaderingen is best geluidloos.
@@ -36,25 +36,23 @@ Onder factoren met betrekking tot de context waarin het product gebruikt wordt k
 De gebruiker zelf verschilt uiteraard ook. Een applicatie gericht op een ouder publiek voorziet best grote tekst en duidelijke iconen.
 
 Het product zelf moet uiteindelijk ook nog bruikbaar zijn en alle functionaliteiten moeten eenvoudig bereikbaar zijn.
-Een hele boterham voor de user experience designer om onderzoek naar te doen voor zijn use case.
+Een hele boterham voor de~\acrlong{acr:ux} designer om onderzoek naar te doen voor zijn use case.
 
 \begin{figure}
     \centering
     \def\svgwidth{.8\columnwidth}
     \input{./img/user-experience-factoren.pdf_tex}
-    \caption{Belangrijke factoren bij user experience}
+    \caption{Belangrijke factoren bij~\acrlong{acr:ux}}
     \label{fig:ux-factoren}
 \end{figure}
 
-\textcite{Morville2004} verdeelde user experience op een andere manier. Hij maakt gebruik van de user experience honingraat (zie figuur~\ref{fig:ux-facets}) die user experience opsplitst in zeven onderdelen.
-
-% TODO - https://www.interaction-design.org/literature/article/the-7-factors-that-influence-user-experience
+\textcite{Morville2004} verdeelde~\acrlong{acr:ux} op een andere manier. Hij maakt gebruik van de~\acrlong{acr:ux} honingraat (zie figuur~\ref{fig:ux-facets}) die~\acrlong{acr:ux} opsplitst in zeven onderdelen.
 
 \begin{itemize}
     \item \textbf{Nuttig.}
     Alle producten moeten een zeker nut hebben. Een applicatie mag niet zomaar een tool zijn van het management maar moet een zekere waarde hebben voor de eindgebruiker.
     \item \textbf{Bruikbaar.}
-    De bruikbaarheid of usability van een product is een van de belangrijkste kenmerken van de user experience. Het is echter niet het enige kenmerk. Bruikbaarheid en gebruiksgemak zijn dus essentieel maar niet voldoende.
+    De bruikbaarheid of usability van een product is een van de belangrijkste kenmerken van de~\acrlong{acr:ux}. Het is echter niet het enige kenmerk. Bruikbaarheid en gebruiksgemak zijn dus essentieel maar niet voldoende.
     \item \textbf{Gewenst.}
     De zoektocht naar een efficiënte applicatie mag de branding, het image en de esthetiek van de applicatie niet achterwege laten. Hoe wenselijker het product is, hoe meer de gebruiker erover zal opscheppen tegen potentieel nieuwe gebruikers.
     \item \textbf{Vindbaar.}
@@ -71,13 +69,13 @@ Een hele boterham voor de user experience designer om onderzoek naar te doen voo
     \centering
     \def\svgwidth{.8\columnwidth}
     \input{./img/user-experience-facets.pdf_tex}
-    \caption{De user experience honingraat}
+    \caption{De~\acrlong{acr:ux} honingraat}
     \label{fig:ux-facets}
 \end{figure}
 
-User experience design is een zeer creatief concept. Door deze creativiteit zijn er uiteraard verschillende meningen over hoe men user experience moet definiëren, omschrijven en indelen. Gezien de belangrijkste manieren vermeld zijn, gaan we hier niet verder op in.
+\acrlong{acr:uxd} is een zeer creatief concept. Door deze creativiteit zijn er uiteraard verschillende meningen over hoe men~\acrlong{acr:ux} moet definiëren, omschrijven en indelen. Gezien de belangrijkste manieren vermeld zijn, gaan we hier niet verder op in.
 
-\subsection{User experience design in de praktijk}
+\subsection{\acrlong{acr:ux} design in de praktijk}
 \label{sec:user-experience-in-software:user-experience-design-in-de-praktijk}
 
 % https://medium.com/@jtnakagawa/nothing-left-to-take-away-437eb23c2ae8
@@ -86,7 +84,7 @@ Een eenvoudige applicatie moet simpel in gebruik zijn, en dit is waar \textbf{Me
 \begin{figure}
     \centering
     \includegraphics[width=.8\columnwidth]{voorbeeld-medium-desktop}
-    \caption{Artikel op Medium weergegeven in een desktop-omgeving}
+    \caption[Voorbeeld Medium desktop]{Artikel op Medium weergegeven in een desktop-omgeving}
     \label{fig:ux-voorbeeld-medium:desktop}
 \end{figure}
 
@@ -95,7 +93,7 @@ Een eenvoudige applicatie moet simpel in gebruik zijn, en dit is waar \textbf{Me
     \subfloat[Donkere gebruikersomgeving]{{\includegraphics[width=.4\columnwidth]{voorbeeld-medium-mobiel-donker}}}
     \qquad
     \subfloat[Lichte gebruikersomgeving]{{\includegraphics[width=.4\columnwidth]{voorbeeld-medium-mobiel-licht}}}
-    \caption{Artikel op Medium weergegeven in een mobiele omgeving}
+    \caption[Voorbeeld Medium mobiel]{Artikel op Medium weergegeven in een mobiele omgeving}
     \label{fig:ux-voorbeeld-medium:mobiel}
 \end{figure}
 
@@ -104,7 +102,7 @@ Een eenvoudige applicatie moet simpel in gebruik zijn, en dit is waar \textbf{Me
 \begin{figure}
     \centering
     \includegraphics[width=.8\columnwidth]{voorbeeld-airbnb-desktop}
-    \caption{Airbnb homepagina}
+    \caption[Voorbeeld Airbnb]{Airbnb homepagina}
     \label{fig:ux-voorbeeld-airbnb}
 \end{figure}
 
@@ -115,7 +113,7 @@ Slimme apparaten in het huishouden zijn bezig aan een opmars. Eén van de bekend
     \subfloat[Fysiek toestel]{{\includegraphics[width=.4\columnwidth]{voorbeeld-nest-toestel}}}
     \qquad
     \subfloat[Mobiele interface]{{\includegraphics[width=.3\columnwidth]{voorbeeld-nest-mobiel}}}
-    \caption{Nest Smart Thermostat}
+    \caption[Voorbeeld Nest Smart Thermostat]{Nest Smart Thermostat}
     \label{fig:ux-voorbeeld-nest}
 \end{figure}
 
@@ -124,24 +122,26 @@ Slimme apparaten in het huishouden zijn bezig aan een opmars. Eén van de bekend
 \begin{figure}
     \centering
     \includegraphics[width=.7\columnwidth]{voorbeeld-hubspot}
-    \caption{Hubspot pop-up melding}
+    \caption[Voorbeeld Hubspot]{Hubspot pop-up melding}
     \label{fig:ux-voorbeeld-hubspot}
 \end{figure}
 
 \section{Usability testing}
 \label{sec:usability-testing}
 
-Usability testing is een methode om alle onderdelen van de user experience honingraat (zie figuur~\ref{fig:ux-facets}) in een applicatie of website te testen. Men test de software in kwestie door er echte gebruikers op te laten werken en ondertussen hun handelingen te observeren. Het doel van usability testing is om de algemene gebruikerservaring te verbeteren~\autocite{Hotjar2020}.
+Usability testing is een methode om alle onderdelen van de~\acrlong{acr:ux} honingraat (zie figuur~\ref{fig:ux-facets}) in een applicatie of website te testen. Men test de software in kwestie door er echte gebruikers op te laten werken en ondertussen hun handelingen te observeren. Het doel van usability testing is om de algemene gebruikerservaring te verbeteren~\autocite{Hotjar2020}.
 
 Bij het creëren van software vergeet de ontwikkelaar al snel dat de gewone eindgebruiker vaak meer moeilijkheden zal ondervinden bij het gebruik van zijn creatie dan hijzelf. Doordat de ontwikkelaar hier zelf vaak blind voor is, voert men testen uit met de eindgebruiker. Hierdoor kan men een beter inzicht krijgen over hoe bruikbaar de software is. In dit proces worden vaak vele euvels opgemerkt die anders in de productiesoftware zouden aanbelanden.
 Zonder usability testing zou men vaak vast komen te zitten met een product dat door het team van ontwikkelaars wordt begrepen, maar door de doelgroep niet.
 
+In onderstaande testmethoden verwijst men vaak naar het ``think aloud'' protocol. Dit think aloud protocol houdt in dat de deelnemer al zijn of haar acties luidop verklaart. Zo heeft de moderator een beter beeld over de gedachtegang van de deelnemer.
+
 \subsection{Laboratory en field testing}
 \label{sec:usability-testing:lab-field-testing}
 
-In voorgaand onderzoek tonen~\textcite{Kaikkonen2005} aan dat usability testing onderverdeeld kan worden in twee categorieën, namelijk laboratory en field testing. Laboratory testing houdt in dat men enkele testpersonen uitnodigt in testlabo's, dit is gewoonlijk op kantoor. Dit labo is een rustige ruimte waarin afleidingen beperkt zijn zodat de concentratie gegarandeerd kan worden. Ook al bestaan er veel twijfels rond laboratory testing, volgens \textcite{Kjeldskov2003} wordt het nog steeds vaker verkozen boven field testing. De reden achter deze keuze is vaak omdat men moeilijkheden ondervindt bij field testing. Het is eenvoudiger om testpersonen op te nemen en te observeren bij technieken zoals ``think aloud'' wanneer men gebruik maakt van laboratory testing.
+In voorgaand onderzoek tonen~\textcite{Kaikkonen2005} aan dat usability testing onderverdeeld kan worden in twee categorieën, namelijk laboratory en field testing. Bij field testing worden te testpersonen uitgenodigd om de applicatie in kwestie te testen in de omgeving waar de applicatie normaal zou gebruikt worden. Een mobiele applicatie zoals~\href{https://www.strava.com/}{Strava} die statistieken van lopers en fietsers bijhoudt zou bijvoorbeeld getest worden tijdens een trainingssessie. Sinds de opmars van de smartphone kan field testing steeds meer ingezet worden~\autocite{Kjeldskov2004}. De camera die gebruikt wordt om de testsessie op te nemen wordt steeds kleiner, waardoor het field testing een pak aangenamer wordt.
 
-Bij field testing worden te testpersonen uitgenodigd om de applicatie in kwestie te testen in de omgeving waar de applicatie normaal zou gebruikt worden. Een mobiele applicatie zoals~\href{https://www.strava.com/}{Strava} die statistieken van lopers en fietsers bijhoudt zou bijvoorbeeld getest worden tijdens een trainingssessie. Sinds de opmars van de smartphone kan field testing steeds meer ingezet worden~\autocite{Kjeldskov2004}. De camera die gebruikt wordt om de testsessie op te nemen wordt steeds kleiner, waardoor het field testing een pak aangenamer wordt.
+Laboratory testing houdt in dat men enkele testpersonen uitnodigt in testlabo's, dit is gewoonlijk op kantoor. Dit labo is een rustige ruimte waarin afleidingen beperkt zijn zodat de concentratie gegarandeerd kan worden. Ook al bestaan er veel twijfels rond laboratory testing, volgens \textcite{Kjeldskov2003} wordt het nog steeds vaker verkozen boven field testing. De reden achter deze keuze is vaak omdat men moeilijkheden ondervindt bij field testing. Het is eenvoudiger om testpersonen op te nemen en te observeren bij technieken zoals ``think aloud'' wanneer men gebruik maakt van laboratory testing.
 
 In beide gevallen van usability testing werd geopteerd voor het ``think aloud'' protocol gebaseerd op het werk van~\textcite{Ericsson1984}. Hierbij zal de testpersoon luidop denken. Dit zorgt ervoor dat er veel informatie vrijkomt over de gedachtegang van de gebruiker bij het gebruik van de applicatie. Dit kan makkelijk opgenomen worden om later conclusies uit te trekken.
 
@@ -185,14 +185,14 @@ Hierbij worden alle functionaliteiten van de applicatie op kaartjes geschreven. 
 \subsubsection{Session recording}
 \label{sec:usability-testing:testmethoden:session-recording}
 
-Deze methode legt de acties vast van echte (anonieme) gebruikers. Zo kan men nadien bekijken hoe de sessie bij de gebruiker verlopen is en waar er eventueel user experience fouten zitten. Ook kan men door deze opnames beter begrijpen welke inhoud en functies belangrijk zijn voor de gebruiker. Deze bevindingen kan men makkelijk aflezen van een heatmap-analyse. Een veelgebruikte tool om sessies op te nemen en heatmap-analyses te generen is~\href{https://www.hotjar.com/}{Hotjar}. Figuur~\ref{fig:testing-hotjar} geeft een voorbeeld van een opname en een heatmap-analyse van de~\href{https://getcardify.com/}{website van Cardify}.
+Deze methode legt de acties vast van echte (anonieme) gebruikers. Zo kan men nadien bekijken hoe de sessie bij de gebruiker verlopen is en waar er eventueel~\acrlong{acr:ux} fouten zitten. Ook kan men door deze opnames beter begrijpen welke inhoud en functies belangrijk zijn voor de gebruiker. Deze bevindingen kan men makkelijk aflezen van een heatmap-analyse. Een veelgebruikte tool om sessies op te nemen en heatmap-analyses te generen is~\href{https://www.hotjar.com/}{Hotjar}. Figuur~\ref{fig:testing-hotjar} geeft een voorbeeld van een opname en een heatmap-analyse van de~\href{https://getcardify.com/}{website van Cardify}.
 
 \begin{figure}
     \centering
     \subfloat[Opname handelingen van een gebruiker]{{\includegraphics[width=\columnwidth]{voorbeeld-testing-opname}}}
     \qquad
     \subfloat[Heatmap-analyse]{{\includegraphics[width=\columnwidth]{voorbeeld-testing-heatmap}}}
-    \caption{Voorbeeld session recording bij Cardify}
+    \caption[Voorbeeld session recording]{Voorbeeld session recording bij Cardify}
     \label{fig:testing-hotjar}
 \end{figure}
 
@@ -203,21 +203,21 @@ De testpersonen bij usability testing moeten zorgvuldig gekozen worden. De doelg
 
 Zoals~\textcite{Faulkner2003} aanhaalde heeft het weinig nut om honderden testpersonen te zoeken. Twintig personen zou volstaan om 95\% van de usability problemen op te merken.
 
-In voorgaand onderzoek van~\textcite{Marcus2006} toont men aan dat er culturele verschillen een grote invloed hebben op UX. Hieruit kunnen we concluderen dat variëteit in de testpersonen zal lonen.
+In voorgaand onderzoek van~\textcite{Marcus2006} toont men aan dat er culturele verschillen een grote invloed hebben op~\acrshort{acr:ux}. Hieruit kunnen we concluderen dat variëteit in de testpersonen zal lonen.
 
-\subsection{De System Usability Scale}
+\subsection{De~\acrlong{acr:sus}}
 \label{sec:usability-testing:sus}
 
-De System Usability Scale is een snelle manier om, met behulp van een vragenlijst, te weten te komen of de usability van het product goed zit. De vragenlijst bestaat uit tien vragen met telkens vijf antwoordmogelijkheden; gaande van ``helemaal mee eens'' tot ``helemaal niet mee eens''. Voor de testpersonen is dit eenvoudig in te vullen. De berekening nadien is echter complex.
+De~\acrlong{acr:sus} is een snelle manier om, met behulp van een vragenlijst, te weten te komen of de usability van het product goed zit. De vragenlijst bestaat uit tien vragen met telkens vijf antwoordmogelijkheden; gaande van ``helemaal mee eens'' tot ``helemaal niet mee eens''. Voor de testpersonen is dit eenvoudig in te vullen. De berekening nadien is echter complex.
 
-Bijgevoegd aan deze scriptie is een template voor de System Usability Scale~\autocite{Calisto2018} (zie bijlage~\ref{bijlage:sus}).
+Bijgevoegd aan deze scriptie is een template voor de~\acrlong{acr:sus}~\autocite{Calisto2018} (zie bijlage~\ref{bijlage:sus}).
 
 In deze vragenlijst bevinden zich twee vragen die testen op learnability in plaats van op usability~\autocite{Lewis2009}.
 
 \section{Learnability}
 \label{sec:learnability}
 
-Er is nog steeds een verschil tussen hoe bruikbaar een applicatie is en hoe goed de eindgebruiker deze applicatie kent. \textcite{Coyle2016} merkten op dat naast de bruikbaarheid (usability) van hun ontwerpen, er ook moest gekeken worden naar de leerbaarheid (learnability) ervan. Na een hele reeks testen en vragenlijsten met gebruikers uit de doelgroep kon men effectief afleiden dat, indien de leerbaarheid van een applicatie ook in acht genomen wordt, men diepere gebruiksproblemen gemakkelijker kon vaststellen. Bij hun onderzoek maakten ze gebruik van onder andere open vragen, de System Usability Scale (zie hoofdstuk~\ref{sec:usability-testing:sus}) en vertrouwensratings gebruikmakend van de Likert schaal.
+Er is nog steeds een verschil tussen hoe bruikbaar een applicatie is en hoe goed de eindgebruiker deze applicatie kent. \textcite{Coyle2016} merkten op dat naast de bruikbaarheid (usability) van hun ontwerpen, er ook moest gekeken worden naar de leerbaarheid (learnability) ervan. Na een hele reeks testen en vragenlijsten met gebruikers uit de doelgroep kon men effectief afleiden dat, indien de leerbaarheid van een applicatie ook in acht genomen wordt, men diepere gebruiksproblemen gemakkelijker kon vaststellen. Bij hun onderzoek maakten ze gebruik van onder andere open vragen, de~\acrlong{acr:sus} (zie hoofdstuk~\ref{sec:usability-testing:sus}) en vertrouwensratings gebruikmakend van de Likert schaal.
 
 In onderzoek van~\textcite{Haramundanis2001} werd beschreven welke stappen men moest ondernemen om leerbare materie te ontwikkelen:
 \begin{itemize}
@@ -228,30 +228,30 @@ In onderzoek van~\textcite{Haramundanis2001} werd beschreven welke stappen men m
     \item Visualisatie
 \end{itemize}
 
-Visualisatie is hierbij een belangrijk onderdeel. In de beginjaren van de personal computer moest men nog door de mappenstructuur van het besturingssysteem bladeren met behulp van de CLI (Command Line Interface) (zie figuur~\ref{fig:learnability:cli}). De leercurve was toen uiteraard zeer steil waardoor de computer een product was waarmee weinig mensen mee overweg konden. Tegenwoordig kan iedereen door zijn of haar mappen bladeren in een besturingssysteem door middel van een GUI (Graphical User Interface) (zie figuur~\ref{fig:learnability:mappen}). Deze verandering bij het gebruik van de personal computer zorgde er ook voor dat het gebruik an een computer makkelijk aan te leren was voor nieuwe gebruikers. Deze evolutie in het ontwerp van software zorgde ervoor dat bijna elk modern huishouden een computer ter beschikking heeft.
+Visualisatie is hierbij een belangrijk onderdeel. In de beginjaren van de personal computer moest men nog door de mappenstructuur van het besturingssysteem bladeren met behulp van de~\acrlong{acr:cli} (zie figuur~\ref{fig:learnability:cli}). De leercurve was toen uiteraard zeer steil waardoor de computer een product was waarmee weinig mensen mee overweg konden. Tegenwoordig kan iedereen door zijn of haar mappen bladeren in een besturingssysteem door middel van een~\acrlong{acr:gui} (zie figuur~\ref{fig:learnability:mappen}). Deze verandering bij het gebruik van de personal computer zorgde er ook voor dat het gebruik an een computer makkelijk aan te leren was voor nieuwe gebruikers. Deze evolutie in het ontwerp van software zorgde ervoor dat bijna elk modern huishouden een computer ter beschikking heeft.
 
 \begin{figure}
     \centering
     \includegraphics[width=.6\columnwidth]{learnability-cli}
-    \caption{De Command Line Interface wordt nog steeds ondersteund op een modern besturingssysteem (hier: \href{https://www.apple.com/macos/}{macOS})}
+    \caption[Mappenstructuur met~\acrlong{acr:cli}]{De~\acrlong{acr:cli} wordt nog steeds ondersteund op een modern besturingssysteem (hier: \href{https://www.apple.com/macos/}{macOS})}
     \label{fig:learnability:cli}
 \end{figure}
 \begin{figure}
     \centering
     \includegraphics[width=.6\columnwidth]{learnability-mappen-1}
     \includegraphics[width=.6\columnwidth]{learnability-mappen-2}
-    \caption{Bladeren door de mappenstructuur in Finder op \href{https://www.apple.com/macos/}{macOS}}
+    \caption[Mappenstructuur met~\acrlong{acr:gui}]{Bladeren door de mappenstructuur in Finder op \href{https://www.apple.com/macos/}{macOS}}
     \label{fig:learnability:mappen}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.5\columnwidth]{consistency-sketch}
-    \caption{Het belang van consistentie doorheen UI-elementen}
+    \caption[Consistentie doorheen~\acrshort{acr:ui}-elementen]{Het belang van consistentie doorheen~\acrshort{acr:ui}-elementen}
     \label{fig:learnability:consistentie}
 \end{figure}
 
-Ook consistentie is belangrijk bij zowel learnability als UX design. Zoals~\textcite{Nikolov2017} aangeeft is bestaan er vier verschillende types van consistentie: visuele, functionele, interne en externe consistentie. De visuele consistentie leunt aan bij het hiervoor genoemde visualisatie. Interne consistentie is een combinatie van visuele en functionele consistentie. Bij het behouden van interne consistentie kan men makkelijk een nieuwe functionaliteit of UI-element toevoegen aan bestaande software zonder dat eindgebruikers opnieuw moeten bijleren hoe de applicatie werkt. Externe consistentie trekt de lijn door naar andere systemen en producten. Bij Cardify blijft men consistent doorheen hun volledige aanbod aan producten (zie figuur~\ref{fig:learnability:consistentie-cardify}). Zo zal een gebruiker van de mobiele applicatie zich snel vertrouwd voelen met de verscheidene webplatformen die Cardify te bieden heeft. Vaak gebruikt een bedrijf ook design guidelines. Grote bedrijven zoals Google gaan daarin natuurlijk wat verder. Zo ontwikkelde Google het \href{https://material.io/}{Material Design} systeem. Bij Cardify kan je de design guidelines vinden op \url{https://getcardify.com/brand/}.
+Ook consistentie is belangrijk bij zowel learnability als~\acrshort{acr:ux} design. Zoals~\textcite{Nikolov2017} aangeeft is bestaan er vier verschillende types van consistentie: visuele, functionele, interne en externe consistentie. De visuele consistentie leunt aan bij het hiervoor genoemde visualisatie. Interne consistentie is een combinatie van visuele en functionele consistentie. Bij het behouden van interne consistentie kan men makkelijk een nieuwe functionaliteit of~\acrshort{acr:ui}-element toevoegen aan bestaande software zonder dat eindgebruikers opnieuw moeten bijleren hoe de applicatie werkt. Externe consistentie trekt de lijn door naar andere systemen en producten. Bij Cardify blijft men consistent doorheen hun volledige aanbod aan producten (zie figuur~\ref{fig:learnability:consistentie-cardify}). Zo zal een gebruiker van de mobiele applicatie zich snel vertrouwd voelen met de verscheidene webplatformen die Cardify te bieden heeft. Vaak gebruikt een bedrijf ook design guidelines. Grote bedrijven zoals Google gaan daarin natuurlijk wat verder. Zo ontwikkelde Google het \href{https://material.io/}{Material Design} systeem. Bij Cardify kan je de design guidelines vinden op \url{https://getcardify.com/brand/}.
 
 
 \begin{figure}
@@ -266,38 +266,38 @@ Ook consistentie is belangrijk bij zowel learnability als UX design. Zoals~\text
 \section{Onboarding}
 \label{sec:onboarding}
 
-Onboarding is slechts één element van de velen die de user experience in software kunnen beïnvloeden. Het is echter wel één van de bekendste en belangrijkste. Voorgaand onderzoek toonde  aan hoe onboarding een positieve invloed op de tevredenheid van de gebruiker over de applicatie~\autocite{Cardoso2017}. Onboarding vindt plaats wanneer de gebruiker de applicatie voor de eerste maal opstart en gebruikt. Het is een soort van gids die de gebruiker de belangrijkste functionaliteiten van de applicatie laat zijn. Vaak wordt onboarding ook ingezet voor het verkrijgen van essentiële informatie van de gebruiker, bijvoorbeeld wanneer deze een account moet aanmaken.
+Onboarding is slechts één element van de velen die de~\acrlong{acr:ux} in software kunnen beïnvloeden. Het is echter wel één van de bekendste en belangrijkste. Voorgaand onderzoek toonde  aan hoe onboarding een positieve invloed op de tevredenheid van de gebruiker over de applicatie~\autocite{Cardoso2017}. Onboarding vindt plaats wanneer de gebruiker de applicatie voor de eerste maal opstart en gebruikt. Het is een soort van gids die de gebruiker de belangrijkste functionaliteiten van de applicatie laat zijn. Vaak wordt onboarding ook ingezet voor het verkrijgen van essentiële informatie van de gebruiker, bijvoorbeeld wanneer deze een account moet aanmaken.
 
 Een onboarding kan de ervaring van de gebruiker zeer positief beïnvloeden. Een slecht geïmplementeerde onboarding kan de ervaring weliswaar heel snel negatief beïnvloeden. Er mag dus zeker niet overdreven worden.
 
 \begin{figure}
     \centering
     \includegraphics[width=.7\columnwidth]{onboarding-gone-wrong}
-    \caption{Bij de ingebruikname van de nieuwe~\href{https://www.apple.com/ipad-pro/}{Apple iPad Pro} werd de onboarding onderbroken door een programmeerfout}
+    \caption[Implementatiefout bij onboarding]{Bij de ingebruikname van de nieuwe~\href{https://www.apple.com/ipad-pro/}{Apple iPad Pro} werd de onboarding onderbroken door een programmeerfout}
     \label{fig:onboarding:fout}
 \end{figure}
 
 \subsection{Welkomstberichten}
 \label{sec:onboarding:welkomstberichten}
 
-\textcite{Balboni2018} groepeerde verschillende implementaties van onboarding in acht UI/UX patronen. Wanneer je je net registreerde of wanneer je een nieuwe app open doet op een mobiel toestel heb je zeker al eens een welkomstbericht ontvangen. Negen op tien onboarding-ervaringen starten met een bericht waarin ze de nieuwe klant verwelkomen. Vaak wordt dit bericht ondersteund door een CTA-knop (Call To Action) waarin men bijvoorbeeld de gebruiker kan uitnodigen om deel te nemen aan een rondleiding doorheen de applicatie.
+\textcite{Balboni2018} groepeerde verschillende implementaties van onboarding in acht~\acrshort{acr:ui}/\acrshort{acr:ux} patronen. Wanneer je je net registreerde of wanneer je een nieuwe app open doet op een mobiel toestel heb je zeker al eens een welkomstbericht ontvangen. Negen op tien onboarding-ervaringen starten met een bericht waarin ze de nieuwe klant verwelkomen. Vaak wordt dit bericht ondersteund door een CTA-knop (Call To Action) waarin men bijvoorbeeld de gebruiker kan uitnodigen om deel te nemen aan een rondleiding doorheen de applicatie.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.3\columnwidth]{onboarding-welkom}
-    \caption{Een welkomstbericht na registratie bij~\href{https://www.headspace.com/}{Headspace}}
+    \caption[Voorbeeld welkomstbericht]{Een welkomstbericht na registratie bij~\href{https://www.headspace.com/}{Headspace}}
     \label{fig:onboarding:welkom}
 \end{figure}
 
 \subsection{Rondleidingen}
-\label{sec:onboarding:rondleindingen}
+\label{sec:onboarding:rondleidingen}
 
 Een rondleiding doorheen de applicatie toont alle belangrijke elementen en functionaliteiten even aan met een beknopte uitleg. De rondleiding moet zich echter beperken tot de belangrijkste onderdelen zodat de eindgebruiker zich niet verveeld of geïrriteerd voelt. Bij de rondleiding maakt men veelal gebruik van tooltips (zie figuur~\ref{fig:onboarding:rondleiding}).
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.3\columnwidth]{onboarding-tooltip}
-    \caption{Een tooltip om de zoekfunctie te benadrukken in de~\href{https://messages.google.com/}{Messages} applicatie van Google}
+    \caption[Voorbeeld tooltip]{Een tooltip om de zoekfunctie te benadrukken in de~\href{https://messages.google.com/}{Messages} applicatie van Google}
     \label{fig:onboarding:rondleiding}
 \end{figure}
 
@@ -309,7 +309,7 @@ De mens wil opdrachten voltooien. Zeker wanneer men de voortgang kan opvolgen. D
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\columnwidth]{cardify-onboarding-app}
-    \caption{Weergave van resterende stappen bij de registratie in de Cardify applicatie}
+    \caption[Voorbeeld voortgangsindicatoren]{Weergave van resterende stappen bij de registratie in de Cardify applicatie}
     \label{fig:onboarding:voortgang}
 \end{figure}
 
@@ -321,21 +321,21 @@ Checklists zetten net zoals voortgangsindicatoren aan tot het voltooien van opdr
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.6\columnwidth]{onboarding-checklist}
-    \caption{Checklist bij het vervolledigen van een profiel op~\href{https://www.linkedin.com/}{LinkedIn}}
+    \caption[Voorbeeld checklist]{Checklist bij het vervolledigen van een profiel op~\href{https://www.linkedin.com/}{LinkedIn}}
     \label{fig:onboarding:checklist}
 \end{figure}
 
 \subsection{Hotspots}
 \label{sec:onboarding:hotspots}
 
-Hotspots zijn gelijkaardig aan de tooltips uit de rondleidingen (zie hoofdstuk~\ref{sec:onboarding:rondleindingen}). De tooltips zijn niet vrijblijvend, een gebruiker die snel aan de slag wil zal hier dus snel door klikken zonder veel informatie opgenomen te hebben. Dot hotspots speel hierop in door zones te creëren waarin de gebruiker kan klikken om meer informatie te verkrijgen over dat UI-element of die functionaliteit. Doordat deze hotspots vrijblijvend zijn verhinderen ze de workflow van de gebruiker niet.
+Hotspots zijn gelijkaardig aan de tooltips uit de rondleidingen (zie hoofdstuk~\ref{sec:onboarding:rondleindingen}). De tooltips zijn niet vrijblijvend, een gebruiker die snel aan de slag wil zal hier dus snel door klikken zonder veel informatie opgenomen te hebben. Dot hotspots speel hierop in door zones te creëren waarin de gebruiker kan klikken om meer informatie te verkrijgen over dat~\acrshort{acr:ui}-element of die functionaliteit. Doordat deze hotspots vrijblijvend zijn verhinderen ze de workflow van de gebruiker niet.
 
 \begin{figure}[h!]
     \centering
-    \subfloat[Hotspot toont aan waar actie mogelijk is]{{\includegraphics[width=.40\columnwidth]{onboarding-hotspot-1}}}
+    \subfloat[Hotspot toont aan waar actie mogelijk is]{{\includegraphics[width=.4\columnwidth]{onboarding-hotspot-1}}}
     \qquad
-    \subfloat[Actieve hotspot]{{\includegraphics[width=.40\columnwidth]{onboarding-hotspot-2}}}
-    \caption{Hotspots bij ingebruikname van~\href{https://www.dropbox.com/paper}{Dropbox Paper}}
+    \subfloat[Actieve hotspot]{{\includegraphics[width=.4\columnwidth]{onboarding-hotspot-2}}}
+    \caption[Voorbeeld hotspots]{Hotspots bij ingebruikname van~\href{https://www.dropbox.com/paper}{Dropbox Paper}}
     \label{fig:onboarding:hotspots}
 \end{figure}
 
@@ -352,7 +352,7 @@ Uitgestelde accountcreatie stelt, zoals je uit de benaming al kon afleiden, de a
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.3\columnwidth]{onboarding-uitstel}
-    \caption{\href{https://www.duolingo.com/}{Duolingo} vereist geen account voor de werking van de applicatie, er worden op bepaalde momenten wel meldingen gegeven van de voordelen van een account}
+    \caption[Voorbeeld uitgestelde accountcreatie]{\href{https://www.duolingo.com/}{Duolingo} vereist geen account voor de werking van de applicatie, er worden op bepaalde momenten wel meldingen gegeven van de voordelen van een account}
     \label{fig:onboarding:uitgestelde-accountcreatie}
 \end{figure}
 
@@ -364,7 +364,7 @@ Gepersonaliseerde onboarding zorgt ervoor dat de gebruiker bij de eerste ingebru
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.3\columnwidth]{onboarding-personal}
-    \caption{Een vragenlijst om de verdere ervaring bij \href{https://www.headspace.com/}{Headspace} te personaliseren}
+    \caption[Voorbeeld gepersonaliseerde onboarding]{Een vragenlijst om de verdere ervaring bij \href{https://www.headspace.com/}{Headspace} te personaliseren}
     \label{fig:onboarding:gepersonaliseerd}
 \end{figure}
 

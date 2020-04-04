@@ -84,6 +84,7 @@ acs-*.bib
 *.glg
 *.glo
 *.gls
+*.glsdefs
 
 # hyperref
 *.brf
