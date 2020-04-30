@@ -47,3 +47,44 @@ De afhankelijke variabelen die worden gemeten zijn:
     \item Een kwalitatieve variabele met betrekking tot de voorkeur voor één van beide applicaties
 \end{itemize}
 
+\section{De proof-of-concept applicatie}
+\label{sec:applicatie}
+
+De proof-of-concept applicatie is een tool waarmee je je huidige spaardoelen kan bijhouden. Van zodra je de applicatie opent kan je een spaardoel toevoegen (zie figuur~X), je kan dit eventueel aanvullen met een bedrag dat je al gespaard hebt, een passende categorie en een deadline. Verder bestaat de applicatie uit drie onderdelen; je huidige spaardoelen, je voltooide spaardoelen en een handige calculator. Je huidige en voltooide spaardoelen worden weergegeven in een overzichtelijke lijst (zie figuur~X). Met de calculator kan je snel berekenen hoeveel je op dagelijkse basis moet sparen om een bepaalde deadline te halen of wanneer je je spaardoel zal behalen als je dagelijks een bepaald bedacht opzij legt (zie figuur~X).
+
+% TODO - Screenshot toevoegen doel
+
+% TODO - Screenshot lijst
+
+% TODO - Screenshot calculator
+
+Eenmaal je een spaardoel hebt toegevoegd kan je telkens een bedrag toevoegen dat je al bijeen gespaard hebt. Dit bedrag wordt bij het totaal opgeteld. Het is mogelijk dit snel te doen door middel van een slider die tot 50 gaat of je kan een extra popover openen waarmee je gedetailleerder je bedrag kan specificeren.
+
+Er zijn ook nog enkele snufjes die iets verder in de menu's verborgen zitten, zoals de mogelijkheid om de applicatie te vergrendelen met een pincode (zie figuur~X). Bij de instellingen is het verder ook mogelijk de munteenheid te wijzigen die doorheen de applicatie gehanteerd wordt. Indien je terug van nul wil starten kan je daar ook alle gegevens van de applicatie wissen (zie figuur~X).
+
+% TODO - Screenshots pincode
+
+% TODO - Screenshot instellingen
+
+De applicatie heeft de naam Piggy gekregen, een verwijzing naar piggy bank, de Engelse vertaling voor spaarvarken. Hierbij is ook een bijhorend logo ontworpen (zie figuur~X). Doorheen de applicatie maakt men verder gebruik van een roze tint die verwijst naar de kleur van het varkentje verwerkt in het logo. Er werd gekozen voor een alternatieve, gele tint voor elementen die moeten opvallen.
+
+% TODO - Afbeelding Logo
+
+\subsection{De learnability elementen}
+\label{sec:applicatie:learnability-elementen}
+
+Zoals vooraf aangehaald in hoofdstuk~\ref{sec:experiment} zullen er twee varianten van de proof-of-concept applicatie gemaakt worden. De ene variant bevat alle functionaliteiten maar hierbij is geen uitleg voorzien in de vorm van onboarding en/of in-app training.
+
+De andere applicatie is functioneel niet verschillend aan de applicatie zonder learnability elementen. In deze applicatie worden echter wel enkele aanpassingen gedaan om de learnability van de applicatie te verbeteren in de hoop een positieve invloed te hebben op het klantbehoud. Bij het openen van deze applicatie wordt de gebruiker gegroet met een welkomstbericht en start er direct een rondleiding aan de hand van tooltips die voorzien zijn van uitleg (zie hoofdstukken~\ref{sec:onboarding:welkomstberichten},~\ref{sec:onboarding:rondleidingen} en figuur~X). Eenmaal in de applicatie kan de gebruiker er voor kiezen om een checklist af te werken. Gaandeweg leert de gebruik zo alle functionaliteiten kennen (zie hoofdstuk~\ref{sec:onboarding:checklists} en figuur~X). Het is ook mogelijk delen van de rondleiding te herbekijken (zie hoofdstuk~\ref{sec:in-app-training}).
+
+% TODO - Screenshot rondleiding
+
+% TODO - Screenshot checklist
+
+\subsection{Ontwikkeling}
+\label{sec:applicatie:ontwikkeling}
+
+Er werd gekozen om de applicatie te schrijven voor het mobiele platform van Apple (iOS) omdat veel gebruikers met grote diversiteit hiermee bekend zijn. De applicatie werd geschreven in in de programmeertaal Swift 5 en draait op iOS 13 of hoger.
+
+\textit{De volledige broncode van de applicatie is te raadplegen op \url{https://github.com/JakobLierman/piggy}.}
+
