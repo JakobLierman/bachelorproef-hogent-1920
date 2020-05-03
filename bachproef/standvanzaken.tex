@@ -201,7 +201,7 @@ Deze methode legt de acties vast van echte (anonieme) gebruikers. Zo kan men nad
 
 De testpersonen bij usability testing moeten zorgvuldig gekozen worden. De doelgroep moet nauwkeurig vastgelegd worden. Zo zal een bejaarde dame geen meerwaarde bieden bij een applicatie gericht op schoolgaande jeugd. In onderzoek van~\textcite{Alnashri2016} bekijkt men ook de verschillen tussen introverte en extroverte personaliteiten.
 
-Zoals~\textcite{Faulkner2003} aanhaalde heeft het weinig nut om honderden testpersonen te zoeken. Twintig personen zou volstaan om 95\% van de usability problemen op te merken.
+Zoals~\textcite{Faulkner2003} aanhaalde heeft het weinig nut om honderden testpersonen te zoeken. Twintig personen zou volstaan om 95\% van de usability problemen op te merken. In een interview met Quentin Braet, Lead Solution Architect bij~\href{https://www.inthepocket.com/}{In The Pocket}, haalde ook hij aan dat de meeste \acrshort{acr:ux} problemen op te merken zijn bij het testen bij een tiental personen (zie bijlage~\ref{bijlage:interview-itp}).
 
 In voorgaand onderzoek van~\textcite{Marcus2006} toont men aan dat er culturele verschillen een grote invloed hebben op~\acrshort{acr:ux}. Hieruit kunnen we concluderen dat variëteit in de testpersonen zal lonen.
 
@@ -253,7 +253,7 @@ Ook consistentie is belangrijk bij zowel learnability als~\acrshort{acr:ux} desi
 
 Onboarding is slechts één element van de velen die de~\acrlong{acr:ux} in software kunnen beïnvloeden. Het is echter wel één van de bekendste en belangrijkste. Voorgaand onderzoek toonde aan hoe onboarding een positieve invloed had op de tevredenheid van de gebruiker over de applicatie~\autocite{Cardoso2017}. Onboarding vindt doorgaans plaats wanneer de gebruiker de applicatie voor de eerste maal opstart en gebruikt. Het is een soort van gids die de gebruiker de belangrijkste functionaliteiten van de applicatie laat zien. Vaak wordt onboarding ook ingezet voor het verkrijgen van essentiële informatie van de gebruiker, bijvoorbeeld wanneer deze een account moet aanmaken.
 
-Een onboarding kan de ervaring van de gebruiker zeer positief beïnvloeden. Een slecht geïmplementeerde onboarding kan de ervaring weliswaar heel snel negatief beïnvloeden. Er mag dus zeker niet overdreven worden.
+Een onboarding kan de ervaring van de gebruiker zeer positief beïnvloeden. Een slecht geïmplementeerde onboarding kan de ervaring weliswaar heel snel negatief beïnvloeden. Er mag dus zeker niet overdreven worden. Zowel Quentin als Seppe, Product \& Growth bij \href{https://getcardify.com/}{Cardify}, bevestigen de gouden regel: ``keep it simple'' (zie bijlage~\ref{bijlage:interview-itp} en~\ref{bijlage:interview-cardify}).
 
 Voorgaand onderzoek~\autocite{Desai2019} toonde aan dat een goed geïmplementeerde onboarding (een onboarding gebaseerd op wat de gebruiker wil bereiken) wel degelijk een heleboel voordelen te bieden heeft. Zo zijn klanten met een positieve perceptie minder geneigd om te stoppen met het gebruik van de applicatie in de eerst 21 dagen dat ze klant zijn. In ideale omstandigheden stijgt de bereidheid om te betalen voor de software met 27\%, wat dus resulteert in een gunstigere~\acrfull{acr:roi}.
 
@@ -321,7 +321,7 @@ Progressieve onboarding laat de gebruiker kennis maken met de applicatie door de
 \subsection{Rondleidingen}
 \label{sec:onboarding:rondleidingen}
 
-Een rondleiding doorheen de applicatie toont alle belangrijke elementen en functionaliteiten even aan met een beknopte uitleg. De rondleiding moet zich echter beperken tot de belangrijkste onderdelen zodat de eindgebruiker zich niet verveeld of geïrriteerd voelt. Bij de rondleiding maakt men veelal gebruik van tooltips (zie figuur~\ref{fig:onboarding:rondleiding}).
+Een rondleiding doorheen de applicatie toont alle belangrijke elementen en functionaliteiten even aan met een beknopte uitleg. De rondleiding moet zich echter beperken tot de belangrijkste onderdelen zodat de eindgebruiker zich niet verveeld of geïrriteerd voelt. Bij de rondleiding maakt men veelal gebruik van tooltips (zie figuur~\ref{fig:onboarding:rondleiding}). De rondleiding word voornamelijk gebruikt bij progressieve onboarding (zie hoofdstuk~\ref{sec:onboarding:types:progressief}).
 
 \begin{figure}[h!]
     \centering
@@ -344,7 +344,7 @@ Bij grote applicaties of software met een aanzienlijke hoeveelheid aan functies 
 \subsection{Voortgangsindicatoren}
 \label{sec:onboarding:voortgang}
 
-De mens wil opdrachten voltooien. Zeker wanneer men de voortgang kan opvolgen. Doorheen het volledige onboarding-proces kan de voortgang dus weergegeven worden in voortgangsbalken of voortgangsstippen (zie figuur~\ref{fig:onboarding:voortgang}).
+De mens wil opdrachten voltooien. Zeker wanneer men de voortgang kan opvolgen. Doorheen het volledige onboarding-proces kan de voortgang dus weergegeven worden in voortgangsbalken of voortgangsstippen (zie figuur~\ref{fig:onboarding:voortgang}). Wanneer een onboarding lang zou worden is dit een goede manier om de gebruiker aan te tonen wanneer deze flow ten einde komt, deze techniek is ook terug te vinden bij Cardify en applicaties ontwikkeld door In The Pocket.
 
 \begin{figure}[h!]
     \centering
@@ -417,10 +417,16 @@ Zoals~\textcite{Strahm2018} verduidelijkten, is de creatie van een onboardingsfl
 
 De onboarding wordt net zoals andere~\acrshort{acr:ux} en~\acrshort{acr:ui}-elementen getest door middel van usability testing (zie hoofdstuk~\ref{sec:usability-testing}). Hierbij kan rekening gehouden worden met de snelheid waarop een gebruiker een taak kan uitvoeren met behulp van uitleg uit onboarding-technieken. Ook moet gekeken worden naar het gevoel dat de gebruiker heeft bij deze onboarding. Indien bijvoorbeeld het grootste deel van de testpersonen te snel door de rondleiding klikt is deze hoogstwaarschijnlijk te lang. Door te werken met het ``think aloud'' protocol en achteraf gerichte vragen te stellen aan de testpersoon kan men snel inzichten creëren over hoe men deze onboarding-technieken kan verbeteren.
 
+Quentin liet weten dat men bij In The Pocket deze testen vaak uitvoert met uitgeprinte mockups of een klikbaar prototype (zie bijlage~\ref{bijlage:interview-itp}). Zo merken ze snel wanneer een flow onlogisch is of wanneer de inhoud van een bepaald scherm onduidelijk is voor de testgebruiker. Verder in het ontwikkelproces word de applicatie vaak uitgebracht als bèta-software. In de bèta-software test het gehele team (of zelfs alle medewerkers van het kantoor) de applicatie. Ook zo komen er soms nog problemen naar boven die men moeilijk of niet zou gevonden hebben bij een test van een half uurtje.
+
+% TODO: Interview Cardify
+
 \section{In-app training}
 \label{sec:in-app-training}
 
 Eenmaal de onboarding voorbij is kan de gebruiker uiteraard terug vallen op de in-app training. Dit zorgt ervoor dat de gebruiker na de onboarding niet in de steek wordt gelaten. In-app user training kan meerdere vormen aannemen. De meest gekende is een help-sectie in de applicatie of online. Hier kan men antwoorden vinden op veelgestelde vragen. Vaak is er ook een formulier aanwezig om complexere vragen op te sturen.
+
+Een help-sectie kan echter wel voor verwarring zorgen bij de gebruiker. Wanneer men \acrshort{acr:ux}-problemen opmerkt zouden deze moeten opgelost worden met \acrshort{acr:ux}-elementen. In het interview met Quentin benadrukte hij dat men bij applicaties die ontwikkeld worden door In The Pocket een help-sectie koste wat het kost wil vermijden. Klanten van In The Pocket zetten vaak nog een \acrshort{acr:faq} op hun website. Ook bij Cardify heeft men dit voorzien. Een verwijzing naar de \acrshort{acr:faq} op de website is te vinden in het navigatiemenu in de mobiele applicatie (zie figuur~\ref{fig:inapptraining:help}).
 
 \begin{figure}
     \centering

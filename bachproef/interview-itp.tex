@@ -1,0 +1,67 @@
+\section{Interview informatie}
+
+Datum: 2 mei 2020. \\
+Respondent: Quentin Braet (\href{https://www.inthepocket.com/}{In The Pocket})
+
+\section[Vraag 1]{Hoe start je bij de ontwikkeling van een nieuwe applicatie aan de onboarding?}
+
+\textit{Neem je de onboarding op in het designproces?}
+
+Heel veel hangt af van het project. We gaan altijd eerst samen met de klant op zoek naar de requirements. Hiervoor starten we van de business requirements waaruit we zowel de  functionele als niet functionele requirements afleiden. Dit geldt ook voor de onboarding van een app. We vertrekken van de doelen (requirements) en kijken wat we nodig hebben om die te bereiken. Veel hangt af van hoe we gebruikers authenticeren en welke vereisten de klant daarbij heeft.
+
+Bij de Payconiq by Bancontact app hebben we bijvoorbeeld heel zware security en legal constraints, maar ook complexiteit die geïntroduceerd wordt door de partners waarmee we samenwerken. Dat maakt dat we voor een heel grote uitdaging stonden om deze technisch zware onboarding flow toch behapbaar te houden voor de gebruiker.
+
+Ook heb je bij mobile apps vaak meerdere permissies die je moet vragen, ook deze moeten worden meegenomen in het designproces. Je wil de gebruiker hier zoveel mogelijk begeleiden en informeren, maar het mag ook niet overweldigend zijn, teveel tekst op een scherm is vaak geen goed idee, de copy is vaak een belangrijk aandachtspunt.
+
+Al deze requirements worden bij ons door de product manager en architect opgenomen in de intake gesprekken. Eens we een duidelijk beeld hiervan hebben, gaan we hiermee aan de slag om samen met een designer de eerste mockups te maken. Deze worden dan afgecheckt op allerlei vlakken, ook met de klant.
+
+\section[Vraag 2]{Hoe test je het gehele onboarding proces binnen ITP?}
+
+\textit{Test je direct bij echte gebruikers of is een rondje rond kantoor reeds voldoende?}
+
+Onze mensen zijn getraind op interfaces ontwerpen, maar doordat wij zelf vaak power users zijn, is het niet altijd evident om te zien waar minder digitaal aangelegde gebruikers moeite mee gaan hebben. Dat is waarom wij vaak gaan ``user testen'', zeker voor grote projecten waar een foute implementatie van een complexe onboarding flow grote gevolgen kan hebben.
+
+Bij user test leggen we de mockups voor aan mensen die we extern recruiten. Vaak een heel gevarieerd publiek, maar aan een 5 tot 10 tal mensen heb je vaak genoeg om de belangrijkste issues te spotten. Hierbij leggen we ze ofwel een printout van de mockups voor, maar vaak kijken we of we toch een clickable prototype kunnen maken om het geheel echter te laten aanvoelen. In deze sessies vergaar je vaak heel veel feedback over onlogische flows of copy en icoontjes die onduidelijk zijn.
+
+Maar ook dit dekt niet alles: wanneer gebruikers langs komen voor zo een user test, dan zijn ze daar met een doel om al je opdrachten te voltooien. In het echt haken mensen gewoon af op het moment dat dingen onduidelijk zijn en hebben ze niet altijd de mogelijkheid om extra uitleg te vragen. Vandaar dat ook de data, vaak in de vorm van funnels, een grote rol spelen in het bijsturen van onboarding flows die live staan. Bovenop deze funnels kunnen ook A/B tests gemaakt worden om het effect van kleine aanpassingen te meten om zo tot een optimale flow te komen.
+
+Naast user testing, doen we ook vaak beta testing, waarbij iedereen van het team (inclusief de klant), maar bij uitbreiding ook gans ITP in een beta programma zit voor onze apps. Dit zijn onze zogenaamde friendly users, die de productie app testen voor hij naar het brede publiek gaat. We krijgen nu eenmaal makkelijker feedback van onze collega's dan van mensen die we niet kennen. Eens de beta goedgekeurd is, gaan we over tot een phased rollout, wat betekent dat we geleidelijk aan meer productie gebruikers toegang geven tot de nieuwste versie. In deze periode houden we alle statistieken nog extra in de gaten.
+
+\section[Vraag 3]{Welke elementen zijn zeker terug te vinden bij een goede onboarding volgens ITP?}
+
+\textit{Denk aan: tooltips, welkomstbericht, ...}
+
+De boodschap is altijd: keep it simple. Hoe korter de flow hoe beter. Toch is dit niet altijd mogelijk. Een aantal dingen die we zeker altijd doen:
+\begin{itemize}
+    \item Bij het vragen van permissies gaan we altijd eerst een scherm tonen die uitlegt waarom deze permissie gebruikt wordt.
+    \item Vaak is er een legal scherm (terms \& conditions + privacy disclaimer), vraag de toestemmingen niet stiekem maar heel expliciet.
+    \item Als je onboarding flow toch lang wordt, geef de gebruiker indicaties van hoe ver hij in de flow zit.
+    \item Bij een lange onboarding flow: probeer eventueel de flow toch op te splitsen. Sommige functionaliteiten kan je misschien pas later activeren met een extra stukje onboarding achteraf. Dit helpt de gebruiker om snel een bruikbare app te zien.
+    \item Introduceer geen nieuwe wachtwoorden als dat niet nodig is, gebruik indien mogelijk bestaande accounts.
+    \item Een handleiding bij de app zou niet nodig mogen zijn, maar korte coachmarks kunnen wel helpen. Ideaal is ook om die niet allemaal tegelijk te geven bij het eerste gebruik, maar de gebruiker enkel het belangrijkste mee te geven in het begin, en meer geavanceerde features later pas te introduceren indien dat nog nodig is (wanneer je merkt dat een gebruiker die bijvoorbeeld nog niet gebruikt heeft).
+    \item Maak het visueel, niemand leest graag veel tekst.
+\end{itemize}
+
+\section[Vraag 4]{Wanneer merk je dat een gebruiker moeilijkheden ondervindt bij een bepaalde functionaliteit?}
+
+\textit{Zie je dit aan gedragingen van de gebruiker bij bijvoorbeeld een usability test?}
+
+Ook hier hangt het af van welke phase we in zitten.
+
+\textbf{Ontwerpfase}: de eerste stap is dat het team het zelf moeten begrijpen, dat klinkt logisch maar is soms al een enorme uitdaging (denk aan apps als Itsme \& Payconiq by Bancontact).
+
+\textbf{User testing fase}: hier let je vooral op het gedrag van de testgebruikers en de vragen die ze stellen.
+
+\textbf{Development \& QA fase}: ook hier komt vaak nog wat feedback van het team, door alles dieper te gaan bekijken komen soms nog rare kronkels naar boven of dingen die plots technisch moeilijker blijken dan gedacht.
+
+\textbf{Beta fase}: de periode waarin we feedback krijgen van onze klant en andere collega's, als blijkt dat bepaalde zaken echt niet werken, kunnen die nog herwerkt worden voor we naar het brede publiek gaan.
+
+\textbf{Phased rollout}: hier monitoren we allerhande statistieken en reviews. Zijn er flows die plots minder gebruikt worden? Komt dit door een technisch probleem? Vinden de mensen een nieuwe feature wel? Moeten we die duidelijker aangeven met een coachmark of een what's new? Indien nodig stoppen we de rollout en wordt het probleem eerst opgelost.
+
+\textbf{Productie fase}: Hier spreekt de data van de onboardingsfunnel het meest, bij welk scherm of bij welke actie haken mensen af? Dit is natuurlijk enkel een indicator, hiermee weet je nog niet noodzakelijk de oorzaak.
+
+\section[Vraag 5]{Hoe voorzie je een help sectie bij zeer complexe functionaliteiten?}
+
+\textit{Volstaat een FAQ sectie? Neem je als het ware het handje van de gebruiker vast en doorloop je alle stappen in de applicatie?}
+
+In principe vermijden we die koste wat het kost, help secties zijn vaak maar een lapmiddel om een minder goede UX toch bruikbaar te maken. In principe moet een UI zichzelf uitwijzen. Dit kan met een aantal kleine tricks zoals coachmarks op gepaste momenten (zie hierboven), een informatieve maar subtiele banner die tips \& tricks geeft... In sommige gevallen beperken we de info op het scherm zelf, waar goede verstaanders in principe genoeg mee hebben, maar zetten we toch ergens een link naar meer uitleg. Veel klanten zetten toch nog een FAQ op hun website en linken er naar via de app, al wordt die vaak aangevuld door informatie van hun first line support. Wij bekijken continu of we enkele van die opmerkingen niet beter kunnen verwerken in de UX van de app. Al hebben al die dingen natuurlijk wel een prijs, en moeten er trade offs gemaakt worden. In principe is alles oplosbaar, maar sommige technische implicaties zijn te kostelijk en die oplossen levert misschien ook maar een beperkte meerwaarde voor de gebruiker. Ook al vinden we dat soms zelf jammer omdat we weten dat het eigenlijk beter zou moeten kunnen, maar het is een constante evenwichtsoefening.
