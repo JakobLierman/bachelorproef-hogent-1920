@@ -251,7 +251,7 @@ Ook consistentie is belangrijk bij zowel learnability als~\acrshort{acr:ux} desi
 \section{Onboarding}
 \label{sec:onboarding}
 
-Onboarding is slechts één element van de velen die de~\acrlong{acr:ux} in software kunnen beïnvloeden. Het is echter wel één van de bekendste en belangrijkste. Voorgaand onderzoek toonde aan hoe onboarding een positieve invloed had op de tevredenheid van de gebruiker over de applicatie~\autocite{Cardoso2017}. Onboarding vindt plaats wanneer de gebruiker de applicatie voor de eerste maal opstart en gebruikt. Het is een soort van gids die de gebruiker de belangrijkste functionaliteiten van de applicatie laat zijn. Vaak wordt onboarding ook ingezet voor het verkrijgen van essentiële informatie van de gebruiker, bijvoorbeeld wanneer deze een account moet aanmaken.
+Onboarding is slechts één element van de velen die de~\acrlong{acr:ux} in software kunnen beïnvloeden. Het is echter wel één van de bekendste en belangrijkste. Voorgaand onderzoek toonde aan hoe onboarding een positieve invloed had op de tevredenheid van de gebruiker over de applicatie~\autocite{Cardoso2017}. Onboarding vindt doorgaans plaats wanneer de gebruiker de applicatie voor de eerste maal opstart en gebruikt. Het is een soort van gids die de gebruiker de belangrijkste functionaliteiten van de applicatie laat zien. Vaak wordt onboarding ook ingezet voor het verkrijgen van essentiële informatie van de gebruiker, bijvoorbeeld wanneer deze een account moet aanmaken.
 
 Een onboarding kan de ervaring van de gebruiker zeer positief beïnvloeden. Een slecht geïmplementeerde onboarding kan de ervaring weliswaar heel snel negatief beïnvloeden. Er mag dus zeker niet overdreven worden.
 
@@ -263,6 +263,48 @@ Voorgaand onderzoek~\autocite{Desai2019} toonde aan dat een goed geïmplementeer
     \caption[Implementatiefout bij onboarding]{Bij de ingebruikname van de nieuwe~\href{https://www.apple.com/ipad-pro/}{Apple iPad Pro} werd de onboarding onderbroken door een programmeerfout}
     \label{fig:onboarding:fout}
 \end{figure}
+
+In dit hoofdstuk zullen de verschillende implementaties van onboarding verder verduidelijkt worden. De verschillende types alsook de UX elementen die in omloop zijn zullen worden besproken. Er wordt aangevangen met hoe men best start met de implementatie van van onboarding.
+
+\subsection{Starten met de implementatie van onboarding}
+\label{sec:onboarding:start}
+
+Starten aan de implementatie van de onboarding is geen eenvoudige klus. Bij Cardify werd er geluisterd naar wat de gebruikers nodig hadden. De onboarding werd per iteratie verfijnd. Bij In The Pocket ontwikkeld men vaak complexe applicaties. Om alle functionaliteiten duidelijk over te brengen naar de gebruiker start men al met het uitdenken van onboarding in de ontwerpfase. In The Pocket gaat zeer frequent feedback vragen bij testgebruikers, dit zelf voor men start met de effectieve ontwikkeling van de software. Door vroeg te testen komen snel problemen boven die in latere fases moeilijker op te lossen zijn. Ook nadat de applicatie uitgebracht is volgt In The Pocket de gedragingen van de gebruiker nog op. Wanneer men problemen opmerkt probeert men die onmiddellijk aan te pakken. Er wordt ook gewerkt met een phased rollout systeem; hierbij lanceert men (een update van) de applicatie voor slechts een deel van de gebruikers, zodat men bij complicaties vroegtijdig kan ingrijpen zonder dat alle gebruikers er hinder van ondervinden. Om snel aan de slag te gaan met onboarding heeft Apple een gids voorzien in hun \href{https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/onboarding/}{Human Interface Guidelines}.
+
+De onboarding zorgt er uiteraard voor dat gebruikers weten hoe de applicatie werkt. Er mag echter niet vergeten worden dat de gebruiker van de applicatie moet kunnen genieten. Onboarding mag dus niet aanvoelen als een verplicht stappenplan waar de gebruiker doorheen moet. De gebruiker moet de onboarding zien als een toffe, leerrijke initiatie tot het gebruik van de applicatie. Het gebruik van animaties en interactie kan ervoor zorgen dat de gebruiker de onboarding op een positieve manier ervaart. Zoals vermeld in het interview met Quentin (zie bijlage~\ref{bijlage:interview-itp}) zijn er soms verplichte secties in de onboarding die niet mogen ontbreken, zoals het vragen van permissies of een legal onderdeel (terms \& conditions en privacy disclaimer).
+
+De gebruiker wil snel aan de slag met de applicatie. Maak de onboarding dus niet onnodig lang. Bij initieel gebruik volstaat het om de basisfunctionaliteit aan te halen, er kan later uitgebreid worden naar complexere functionaliteiten of functionaliteiten die verder verborgen zitten.
+
+Er moet proactief gezocht worden naar stukken in de software waar de gebruiker vast kan komen te zitten. Bij deze stukken kan doorheen de applicatie hulp voorzien worden in de vorm van een onboarding. Dit kan bestaan uit elementen zoals bijvoorbeeld tooltips of hotspots (zie hoofdstuk~\ref{sec:onboarding:hotspots} en~\ref{sec:onboarding:actie-tooltips}).
+
+Kort samengevat moet men rekening houden met volgende vijf basisprincipes:
+\begin{enumerate}
+    \item Zorg dat gebruikers van de applicatie kunnen genieten.
+    \item Ga snel naar de actie.
+    \item Anticipeer op de behoefte aan hulp.
+    \item Blijf bij de essentie.
+    \item Maak leren leuk.
+\end{enumerate}
+
+\subsection{Verschillende types van onboarding}
+\label{sec:onboarding:types}
+
+Er bestaan verschillende manieren om een gebruiker aan boord te krijgen van de applicatie. Zo zal een onboarding van een applicatie die een product of dienst probeert te verkopen er anders uit zien dan een onboarding van software dat gebruikt wordt op de werkvloer of onboarding om de werking van een computerspel uit te leggen. \textcite{Bufe2020} toonde in voorgaand onderzoek aan dat onboarding gesplitst kan worden in drie soorten. Bij de effectieve implementatie van deze onboarding is het wel mogelijk dat men hier een combinatie van neemt.
+
+\subsubsection{Onboarding gericht op de voordelen van de applicatie}
+\label{sec:onboarding:types:voordeel}
+
+Wanneer men zich voornamelijk richt op de voordelen van de applicatie zal men in de onboarding uitleggen welk probleem de gebruiker kan oplossen met behulp van de applicatie. Er wordt bij deze manier van onboarding dus niet gefocust op hoe de functionaliteit werkt. Deze onboarding wordt ingezet om de gebruiker ervan te overtuigen de applicatie te blijven gebruiken.
+
+\subsubsection{Functiegerichte onboarding}
+\label{sec:onboarding:types:functie}
+
+Functiegerichte onboarding focust zich, zoals de benaming al deed vermoeden, op de functionaliteiten binnen de applicatie. Deze manier van onboarding wordt vaak ingezet wanneer de applicatie enkele complexe functies heeft. Het is belangrijk dat initieel enkel de essentiële en belangrijkste functionaliteiten uitgelegd worden. Gedetailleerde uitleg kan in latere fases voorzien worden.
+
+\subsubsection{Progressieve onboarding}
+\label{sec:onboarding:types:progressief}
+
+Progressieve onboarding laat de gebruiker kennis maken met de applicatie door deze te gebruiken. Aan de hand van een rondleiding leert de gebruiker wat de mogelijkheden en voordelen zijn van de software. Progressieve onboarding is een uitstekende aanpak als de applicatie verborgen functionaliteiten, verborgen gebaren of ingewikkelde workflows heeft.
 
 \subsection{Welkomstberichten}
 \label{sec:onboarding:welkomstberichten}
