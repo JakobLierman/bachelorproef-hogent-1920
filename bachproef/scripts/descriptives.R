@@ -1,6 +1,12 @@
 # Data
 dataSet <- read.csv(file = "dataset.csv", sep = ";")
 dataSet$birthdate <- as.Date(dataSet$birthdate, "%Y-%m-%d")
+dataSet$sus_4 <- factor(dataSet$sus_4,
+                        levels = c("Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"),
+                        ordered = TRUE)
+dataSet$sus_10 <- factor(dataSet$sus_10,
+                         levels = c("Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"),
+                         ordered = TRUE)
 
 dataSet$times_mean <- (dataSet$settings_task + dataSet$new_task + dataSet$add_task + dataSet$delete_task + dataSet$calculator_task + dataSet$add_task_repeat) / 6
 
@@ -39,90 +45,74 @@ dev.off()
 ## Times
 
 ### Settings Task
-meanSettingsTaskWithoutOnboarding <- mean(subSetWithoutOnboarding$settings_task)
-round(meanSettingsTaskWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$settings_task)
 sdSettingsTaskWithoutOnboarding <- sd(subSetWithoutOnboarding$settings_task)
 round(sdSettingsTaskWithoutOnboarding, 2)
 
-meanSettingsTaskWithOnboarding <- mean(subSetWithOnboarding$settings_task)
-round(meanSettingsTaskWithOnboarding, 2)
+summary(subSetWithOnboarding$settings_task)
 sdSettingsTaskWithOnboarding <- sd(subSetWithOnboarding$settings_task)
 round(sdSettingsTaskWithOnboarding, 2)
 
 ### New Task
-meanNewTaskWithoutOnboarding <- mean(subSetWithoutOnboarding$new_task)
-round(meanNewTaskWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$new_task)
 sdNewTaskWithoutOnboarding <- sd(subSetWithoutOnboarding$new_task)
 round(sdNewTaskWithoutOnboarding, 2)
 
-meanNewTaskWithOnboarding <- mean(subSetWithOnboarding$new_task)
-round(meanNewTaskWithOnboarding, 2)
+summary(subSetWithOnboarding$new_task)
 sdNewTaskWithOnboarding <- sd(subSetWithOnboarding$new_task)
 round(sdNewTaskWithOnboarding, 2)
 
 ### Add Task
-meanAddTaskWithoutOnboarding <- mean(subSetWithoutOnboarding$add_task)
-round(meanAddTaskWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$add_task)
 sdAddTaskWithoutOnboarding <- sd(subSetWithoutOnboarding$add_task)
 round(sdAddTaskWithoutOnboarding, 2)
 
-meanAddTaskWithOnboarding <- mean(subSetWithOnboarding$add_task)
-round(meanAddTaskWithOnboarding, 2)
+summary(subSetWithOnboarding$add_task)
 sdAddTaskWithOnboarding <- sd(subSetWithOnboarding$add_task)
 round(sdAddTaskWithOnboarding, 2)
 
 ### Delete Task
-meanDeleteTaskWithoutOnboarding <- mean(subSetWithoutOnboarding$delete_task)
-round(meanDeleteTaskWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$delete_task)
 sdDeleteTaskWithoutOnboarding <- sd(subSetWithoutOnboarding$delete_task)
 round(sdDeleteTaskWithoutOnboarding, 2)
 
-meanDeleteTaskWithOnboarding <- mean(subSetWithOnboarding$delete_task)
-round(meanDeleteTaskWithOnboarding, 2)
+summary(subSetWithOnboarding$delete_task)
 sdDeleteTaskWithOnboarding <- sd(subSetWithOnboarding$delete_task)
 round(sdDeleteTaskWithOnboarding, 2)
 
 ### Calculator Task
-meanCalculatorTaskWithoutOnboarding <- mean(subSetWithoutOnboarding$calculator_task)
-round(meanCalculatorTaskWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$calculator_task)
 sdCalculatorTaskWithoutOnboarding <- sd(subSetWithoutOnboarding$calculator_task)
 round(sdCalculatorTaskWithoutOnboarding, 2)
 
-meanCalculatorTaskWithOnboarding <- mean(subSetWithOnboarding$calculator_task)
-round(meanCalculatorTaskWithOnboarding, 2)
+summary(subSetWithOnboarding$calculator_task)
 sdCalculatorTaskWithOnboarding <- sd(subSetWithOnboarding$calculator_task)
 round(sdCalculatorTaskWithOnboarding, 2)
 
 ### Add Task Repeat
-meanAddTaskRepeatWithoutOnboarding <- mean(subSetWithoutOnboarding$add_task_repeat)
-round(meanAddTaskRepeatWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$add_task_repeat)
 sdAddTaskRepeatWithoutOnboarding <- sd(subSetWithoutOnboarding$add_task_repeat)
 round(sdAddTaskRepeatWithoutOnboarding, 2)
 
-meanAddTaskRepeatWithOnboarding <- mean(subSetWithOnboarding$add_task_repeat)
-round(meanAddTaskRepeatWithOnboarding, 2)
+summary(subSetWithOnboarding$add_task_repeat)
 sdAddTaskRepeatWithOnboarding <- sd(subSetWithOnboarding$add_task_repeat)
 round(sdAddTaskRepeatWithOnboarding, 2)
 
 ### Combined tasks
-meanCombinedTasksWithoutOnboarding <- mean(subSetWithoutOnboarding$times_mean)
-round(meanCombinedTasksWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$times_mean)
 sdCombinedTasksWithoutOnboarding <- sd(subSetWithoutOnboarding$times_mean)
 round(sdCombinedTasksWithoutOnboarding, 2)
 
-meanCombinedTasksWithOnboarding <- mean(subSetWithOnboarding$times_mean)
-round(meanCombinedTasksWithOnboarding, 2)
+summary(subSetWithOnboarding$times_mean)
 sdCombinedTasksWithOnboarding <- sd(subSetWithOnboarding$times_mean)
 round(sdCombinedTasksWithOnboarding, 2)
 
 ## SUS
-meanSUSWithoutOnboarding <- mean(subSetWithoutOnboarding$sus)
-round(meanSUSWithoutOnboarding, 2)
+summary(subSetWithoutOnboarding$sus)
 sdSUSWithoutOnboarding <- sd(subSetWithoutOnboarding$sus)
 round(sdSUSWithoutOnboarding, 2)
 
-meanSUSWithOnboarding <- mean(subSetWithOnboarding$sus)
-round(meanSUSWithOnboarding, 2)
+summary(subSetWithOnboarding$sus)
 sdSUSWithOnboarding <- sd(subSetWithOnboarding$sus)
 round(sdSUSWithOnboarding, 2)
 
@@ -240,4 +230,14 @@ barplot(prop.table(countsWouldKeep, 2),
         names.arg = c("Zonder onboarding en help", "Met onboarding en help"),
         col = c("#eb3655","#0093d0"),
         legend = c("Applicatie verwijderen", "Applicatie houden"))
+dev.off()
+
+## Changed name
+countsChangedName <- table(dataSet$uses_personal_initial, dataSet$onboarding_elements)
+pdf("../img/beschrijving-changed-name.pdf", height=5, width=6)
+barplot(prop.table(countsChangedName, 2),
+        ylab = "Aantal",
+        names.arg = c("Zonder onboarding en help", "Met onboarding en help"),
+        col = c("#eb3655","#0093d0"),
+        legend = c("Naam niet gewijzigd", "Naam gewijzigd"))
 dev.off()

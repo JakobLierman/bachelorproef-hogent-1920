@@ -1,6 +1,5 @@
 # Data
 dataSet <- read.csv(file = "dataset.csv", sep = ";")
-dataSet$birthdate <- as.Date(dataSet$birthdate, "%Y-%m-%d")
 
 dataSet$times_mean <- (dataSet$settings_task + dataSet$new_task + dataSet$add_task + dataSet$delete_task + dataSet$calculator_task + dataSet$add_task_repeat) / 6
 
@@ -132,5 +131,3 @@ sdSUSWithOnboarding <- sd(subSetWithOnboarding$sus)
 round(sdSUSWithOnboarding, 2)
 
 t.test(x = dataSet$onboarding_elements, y = dataSet$sus)
-
-
