@@ -117,8 +117,35 @@ sdSUSWithOnboarding <- sd(subSetWithOnboarding$sus)
 round(sdSUSWithOnboarding, 2)
 
 ### Learnability vragen
+summary(subSetWithoutOnboarding$sus_4)
+summary(as.numeric(subSetWithoutOnboarding$sus_4))
+sdSUS4WithoutOnboarding <- sd(as.numeric(subSetWithoutOnboarding$sus_4))
+round(sdSUS4WithoutOnboarding, 2)
 
-# TODO
+summary(subSetWithOnboarding$sus_4)
+summary(as.numeric(subSetWithOnboarding$sus_4))
+sdSUS4WithOnboarding <- sd(as.numeric(subSetWithOnboarding$sus_4))
+round(sdSUS4WithOnboarding, 2)
+
+summary(subSetWithoutOnboarding$sus_10)
+summary(as.numeric(subSetWithoutOnboarding$sus_10))
+sdSUS10WithoutOnboarding <- sd(as.numeric(subSetWithoutOnboarding$sus_10))
+round(sdSUS10WithoutOnboarding, 2)
+
+summary(subSetWithOnboarding$sus_10)
+summary(as.numeric(subSetWithOnboarding$sus_10))
+sdSUS10WithOnboarding <- sd(as.numeric(subSetWithOnboarding$sus_10))
+round(sdSUS10WithOnboarding, 2)
+
+library(likert)
+
+pdf("../img/beschrijving-sus-zonder.pdf", height=5, width=7)
+likert.bar.plot(likert(subset(subSetWithoutOnboarding, select = c(sus_4, sus_10))))
+dev.off()
+
+pdf("../img/beschrijving-sus-met.pdf", height=5, width=7)
+likert.bar.plot(likert(subset(subSetWithOnboarding, select = c(sus_4, sus_10))))
+dev.off()
 
 ## Help
 
