@@ -1,0 +1,54 @@
+\chapter{\IfLanguageName{dutch}{Resultaten van de proef}{Results of the test}}
+\label{ch:resultaten}
+
+\section[Onderzoeksvraag 1]{Onderzoeksvraag 1: Kan een (betere) onboarding en in-app user training ervoor zorgen dat de eindgebruiker een beter inzicht heeft op de totale functionaliteit van een grote applicatie?}
+\label{sec:onderzoeksvraag-1}
+
+Om een antwoord te formuleren op de eerste onderzoeksvraag kan men een aantal afhankelijke variabelen in overweging nemen. Enerzijds kan men kijken naar alle tijden op de zes taken, anderzijds naar de SUS-score en de vragen met betrekking tot learnability uit de SUS-vragenlijst, maar men kan ook in overweging nemen of de participant al dan niet om hulp vroeg tijdens één van de taken.
+
+Deze laatste variabelen, namelijk de zes dichotome hulp-gevraagd variabelen, werden onderzocht met behulp van een $\tilde{\chi}^2$-test (chi-kwadraattest). In deze test werd de groep waarvan de participant deel uitmaakt als onafhankelijke variabele opgenomen. De resultaten zijn waar te nemen in tabel~\ref{tab:chisq-hulp}. Voor de opdrachten \textit{instellingen}, \textit{spaardoel toevoegen}, \textit{bedrag toevoegen} en \textit{berekening} hebben alle participanten het doel bereikt zonder hulp.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{r|cccc}
+        \textbf{Opdracht} & \textbf{$\tilde{\chi}^2$} & \textbf{$df$} & \textbf{$p$} & \textbf{$N$} \\ \hline
+        Spaardoel verwijderen & $5.16$ & $1$ & $0.02$ & $25$ \\
+        Groot bedrag toevoegen & $0.003$ & $1$ & $0.95$ & $25$
+    \end{tabular}
+    \caption{$\tilde{\chi}^2$ resultaten indien de participant hulp nodig had}
+    \label{tab:chisq-hulp}
+\end{table}
+
+Uit de resultaten van de $\tilde{\chi}^2$-test valt af te leiden dat er een significant verband is tussen de twee variabelen bij de opdracht \textit{spaardoel verwijderen}, $\tilde{\chi}^2 (1, N = 25) = 5.16$, $p = 0.02$, maar niet bij de opdracht \textit{groot bedrag toevoegen}, $\tilde{\chi}^2 (1, N = 25) = 0.003$, $p = 0.95$. Bij enkele functionaliteiten zal de gebruiker dus minder hulp nodig hebben wanneer men bepaalde vormen van onboarding implementeert in de applicatie. Echter zal de gebruiker niet bij elke functionaliteit een voordeel halen uit de onboarding. Om te weten wanneer de onboarding van pas komt kan men best de applicatie laten testen door enkele personen en noteren waar deze problemen ondervinden.
+
+Om de overige afhankelijke variabelen op te nemen in de analyses, werd eerst een $t$-test uitgevoerd. In deze $t$-test werd opnieuw als onafhankelijke variabele de groep waarvan de participant deel uitmaakt opgenomen. Als afhankelijke variabele werd gekozen voor een gemiddelde van de tijden op alle taken. Participanten voltooiden de opdrachten sneller wanneer deze de proof-of-concept applicatie hadden waarbij de onboarding en help-elementen beschikbaar waren ($M = 23.36$, $SD = 9.95$) in vergelijking met wanneer deze geen onboarding en help-elementen ter beschikking hadden ($M = 43.57$, $SD = 21.76$), $t(24.033) = -8.426$, $p < .001$.
+
+Deze analyse toont een verschil aan tussen wanneer men wel of geen gebruik kon maken van de learnability-elementen, maar de assumptie wordt gemaakt dat het effect van learnability-elementen op de zes taken gelijkaardig genoeg is dat er een gemiddelde van kan worden genomen. Omwille van deze reden wordt voor elke taak apart nog eens een $t$-test uitgevoerd. De resultaten van deze $t$-test zijn waar te nemen in tabel~\ref{tab:ttest-opdrachten}. Per opdracht is ook hier duidelijk dat participanten die gebruik maakten van onboarding en help-elementen significant minder tijd nodig hadden om de opdracht te voltooien. De gemiddelde tijden zijn te vinden in tabellen~\ref{tab:beschrijving-tijden-zonder-elementen} en \ref{tab:beschrijving-tijden-met-elementen}. De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-1}.
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{r|ccc}
+		\textbf{Opdracht} & \textbf{$t$} & \textbf{$df$} & \textbf{$p$} \\ \hline
+		Instellingen & $-8.55$ & $24.10$ & $< 0.001$ \\
+		Spaardoel toevoegen & $-11.11$ & $24.04$ & $< 0.001$ \\
+		Bedrag toevoegen & $-9.27$ & $24.05$ & $< 0.001$ \\
+		Spaardoel verwijderen & $-4.19$ & $24.01$ & $< 0.001$ \\
+		Berekening & $-10.55$ & $24.05$ & $< 0.001$ \\
+		Groot bedrag toevoegen & $-5.27$ & $24.01$ & $< 0.001$ \\
+		\textit{SUS-score} & $-29.36$ & $24.07$ & $< 0.001$
+	\end{tabular}
+	\caption{$t$-testen van alle opdrachten}
+	\label{tab:ttest-opdrachten}
+\end{table}
+
+Een betere onboarding kan er zeker en vast voor zorgen dat de eindgebruiker sneller met de applicatie overweg kan. Hoe goed deze applicatie is in de ogen van de gebruiker hangt echter van meerdere variabelen af. Zo is een matige applicatie met een goede learnability niet rechtstreeks een betere applicatie. Waar en wanneer er in-app help elementen moeten geïmplementeerd worden hangt sterk af van de gebruiker. Wat vaak werd opgemerkt bij het afnemen van deze proef is dat elke gebruiker verschillend is en de ene gebruiker een bepaalde functionaliteit begrijpt zonder hulp terwijl de andere gebruiker sterk leunt op de hulp. Bij het bouwen van een applicatie moet dus zeker rekening gehouden worden met het doelpubliek bij het implementeren van onboarding en help-elementen. Usability tests voor en na die implementatie zijn sterk aan te raden voor betere inzichten.
+
+\section[Onderzoeksvraag 2]{Onderzoeksvraag 2: Hoe een grote hoeveelheid aan functionaliteiten beheersbaar houden voor de eindgebruiker?}
+\label{sec:onderzoeksvraag-2}
+
+\section[Onderzoeksvraag 3]{Onderzoeksvraag 3: Heeft (het gebrek aan) in-app user training effect op de gebruiksduur en/of levensduur van de applicatie?}
+\label{sec:onderzoeksvraag-3}
+
+\section[Onderzoeksvraag 4]{Onderzoeksvraag 4: Hoe de eindgebruiker wegwijs maken in een grote applicatie?}
+\label{sec:onderzoeksvraag-4}
+

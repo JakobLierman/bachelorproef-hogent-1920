@@ -12,10 +12,9 @@
 \usepackage{subcaption}
 \usepackage{pdfpages}
 \usepackage[overload]{textcase}
+
 \usepackage[acronym]{glossaries}
-
 \makeglossaries
-
 \newacronym{acr:ux}{UX}{User Experience}
 \newacronym{acr:ui}{UI}{User Interface}
 \newacronym{acr:uxd}{UXD}{User Experience Design}
@@ -25,6 +24,27 @@
 \newacronym{acr:roi}{ROI}{Return on Investment}
 \newacronym{acr:cta}{CTA}{Call-To-Action}
 \newacronym{acr:faq}{FAQ}{Frequently Asked Questions}
+
+\usepackage{color}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\usepackage{listings}
+\lstset{
+    language=R,
+    basicstyle=\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    frame=single,
+    rulecolor=\color{black},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    keywordstyle=\color{blue},
+    commentstyle=\color{darkgreen},
+    stringstyle=\color{purple},
+    escapeinside={\%*}{*)}
+} 
 
 %%---------- Documenteigenschappen ---------------------------------------------
 
@@ -117,6 +137,7 @@
 % elke fase in je onderzoek in een apart hoofdstuk bespreken.
 
 \input{metingen}
+\input{resultaten}
 
 \input{conclusie}
 
@@ -158,6 +179,11 @@ Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat 
 \label{bijlage:deelnameformulier}
 
 \input{deelnameformulier}
+
+\chapter{Berekeningen R onderzoeksvraag 1}
+\label{bijlage:r-1}
+
+\lstinputlisting{scripts/test_rq1.R}
 
 %%---------- Referentielijst --------------------------------------------------
 

@@ -1,6 +1,8 @@
 # Data
 dataSet <- read.csv(file = "dataset.csv", sep = ";")
-dataSet$birthdate <- as.Date(dataSet$birthdate, "%d/%m/%Y")
+dataSet$birthdate <- as.Date(dataSet$birthdate, "%Y-%m-%d")
+
+dataSet$times_mean <- (dataSet$settings_task + dataSet$new_task + dataSet$add_task + dataSet$delete_task + dataSet$calculator_task + dataSet$add_task_repeat) / 6
 
 subSetWithoutOnboarding <- subset(dataSet, onboarding_elements == FALSE, select = -c(onboarding_elements))
 subSetWithOnboarding <- subset(dataSet, onboarding_elements == TRUE, select = -c(onboarding_elements))
@@ -19,9 +21,9 @@ dev.off()
 
 ## Age
 library(eeptools)
-dataSet$age = age_calc(dataSet$birthdate, enddate = as.Date("2020-05-22"), units = "years", precise = FALSE)
-age_floor = floor(dataSet$age/10)*10
-dataSet$age_group = paste(age_floor, (age_floor+9), sep = "-")
+dataSet$age <- age_calc(dataSet$birthdate, enddate = as.Date("2020-05-22"), units = "years", precise = FALSE)
+age_floor <- floor(dataSet$age/10)*10
+dataSet$age_group <- paste(age_floor, (age_floor+9), sep = "-")
 
 countsAge <- table(dataSet$age_group, dataSet$onboarding_elements)
 pdf("../img/beschrijving-steekproef-leeftijd.pdf", height=5, width=6)
@@ -101,6 +103,17 @@ meanAddTaskRepeatWithOnboarding <- mean(subSetWithOnboarding$add_task_repeat)
 round(meanAddTaskRepeatWithOnboarding, 2)
 sdAddTaskRepeatWithOnboarding <- sd(subSetWithOnboarding$add_task_repeat)
 round(sdAddTaskRepeatWithOnboarding, 2)
+
+### Combined tasks
+meanCombinedTasksWithoutOnboarding <- mean(subSetWithoutOnboarding$times_mean)
+round(meanCombinedTasksWithoutOnboarding, 2)
+sdCombinedTasksWithoutOnboarding <- sd(subSetWithoutOnboarding$times_mean)
+round(sdCombinedTasksWithoutOnboarding, 2)
+
+meanCombinedTasksWithOnboarding <- mean(subSetWithOnboarding$times_mean)
+round(meanCombinedTasksWithOnboarding, 2)
+sdCombinedTasksWithOnboarding <- sd(subSetWithOnboarding$times_mean)
+round(sdCombinedTasksWithOnboarding, 2)
 
 ## SUS
 meanSUSWithoutOnboarding <- mean(subSetWithoutOnboarding$sus)
