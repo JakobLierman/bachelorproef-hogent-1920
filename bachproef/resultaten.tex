@@ -23,7 +23,9 @@ Uit de resultaten van de $\chi^2$-test valt af te leiden dat er een significant 
 
 Om de overige afhankelijke variabelen op te nemen in de analyses, werd eerst een $t$-test uitgevoerd. In deze $t$-test werd opnieuw als onafhankelijke variabele de groep waarvan de participant deel uitmaakt opgenomen. Als afhankelijke variabele werd gekozen voor een gemiddelde van de tijden op alle taken. Participanten voltooiden de opdrachten sneller wanneer deze de proof-of-concept applicatie hadden waarbij de onboarding en help-elementen beschikbaar waren ($M = 23.36$, $SD = 9.95$) in vergelijking met wanneer deze geen onboarding en help-elementen ter beschikking hadden ($M = 43.57$, $SD = 21.76$), $t(24.033) = -8.426$, $p < .001$.
 
-Deze analyse toont een verschil aan tussen wanneer men wel of geen gebruik kon maken van de learnability-elementen, maar de assumptie wordt gemaakt dat het effect van learnability-elementen op de zes taken gelijkaardig genoeg is dat er een gemiddelde van kan worden genomen. Omwille van deze reden wordt voor elke taak apart nog eens een $t$-test uitgevoerd. De resultaten van deze $t$-test zijn waar te nemen in tabel~\ref{tab:ttest-opdrachten}. Per opdracht is ook hier duidelijk dat participanten die gebruik maakten van onboarding en help-elementen significant minder tijd nodig hadden om de opdracht te voltooien. De gemiddelde tijden zijn te vinden in tabellen~\ref{tab:beschrijving-tijden-zonder-elementen} en \ref{tab:beschrijving-tijden-met-elementen}. De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-1}.
+Deze analyse toont een verschil aan tussen wanneer men wel of geen gebruik kon maken van de learnability-elementen, maar de assumptie wordt gemaakt dat het effect van learnability-elementen op de zes taken gelijkaardig genoeg is dat er een gemiddelde van kan worden genomen. Omwille van deze reden wordt voor elke taak apart nog eens een $t$-test uitgevoerd. De resultaten van deze $t$-test zijn waar te nemen in tabel~\ref{tab:ttest-opdrachten}. Per opdracht is ook hier duidelijk dat participanten die gebruik maakten van onboarding en help-elementen significant minder tijd nodig hadden om de opdracht te voltooien. De gemiddelde tijden zijn te vinden in tabellen~\ref{tab:beschrijving-tijden-zonder-elementen} en \ref{tab:beschrijving-tijden-met-elementen}.
+
+\textit{De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-1}.}
 
 \begin{table}[]
 	\centering
@@ -50,14 +52,18 @@ Het beheersbaar houden van een aanzienlijke hoeveelheid aan functionaliteiten is
 
 Waarop zeker gefocust moet worden bij de implementatie van learnability-elementen in software van een aanzienlijke omvang is dat men de gebruiker initieel niet overspoelt met uitleg. De gebruiker verliest zo snel de aandacht en zal niet alles kunnen onthouden. Hotspots (zie hoofdstuk~\ref{sec:onboarding:hotspots}) zijn zo vaak een betere keuze dan een rondleiding (zie hoofdstuk~\ref{sec:onboarding:rondleidingen}), omdat de gebruiker zo zelf kiest wanneer deze wil starten met de uitleg.
 
-Men kan de beheersbaarheid meten met de vragen uit de SUS-vragenlijst die betrekking hebben tot learnability. Participanten antwoorden gunstiger op deze vragen wanneer deze de proof-of-concept applicatie hadden waarbij de onboarding en help-elementen beschikbaar waren (vraag 4: $M = 1.31$, $SD = 0.85$, vraag 10: $M = 1.62$, $SD = 1.04$) in vergelijking met wanneer deze geen onboarding en help-elementen ter beschikking hadden (vraag 4: $M = 1.67$, $SD = 0.78$, vraag 10: $M = 1.83$, $SD = 0.83$), vraag 4: $t(40.07) = -4.96$, $p < .001$, vraag 10: $t(37.09) = -5.63$, $p < .001$. De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-2}.
+Men kan de beheersbaarheid meten met de vragen uit de SUS-vragenlijst die betrekking hebben tot learnability. Participanten antwoorden gunstiger op deze vragen wanneer deze de proof-of-concept applicatie hadden waarbij de onboarding en help-elementen beschikbaar waren (vraag 4: $M = 1.31$, $SD = 0.85$, vraag 10: $M = 1.62$, $SD = 1.04$) in vergelijking met wanneer deze geen onboarding en help-elementen ter beschikking hadden (vraag 4: $M = 1.67$, $SD = 0.78$, vraag 10: $M = 1.83$, $SD = 0.83$), vraag 4: $t(40.07) = -4.96$, $p < .001$, vraag 10: $t(37.09) = -5.63$, $p < .001$.
+
+\textit{De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-2}.}
 
 \section[Onderzoeksvraag 3]{Onderzoeksvraag 3: Heeft (het gebrek aan) in-app user training effect op de gebruiksduur en/of levensduur van de applicatie?}
 \label{sec:onderzoeksvraag-3}
 
 Indien de gebruiker de applicatie voor een langdurige periode zou gebruiken is moeilijk te voorspellen. De belangrijkste fase voor de gebruiksduur is het initieel gebruik. Wanneer de gebruiker niet overtuigd is van de applicatie zal hij of zij die sneller terug verwijderen. Als afsluitende vraag in de proef werd aan de participanten gevraagd indien ze deze applicatie zouden houden op hun toestel of indien ze deze zouden verwijderen of vergelijken met concurrerende software.
 
-In figuur~\ref{fig:beschrijving-would-keep} is te merken dat er eventueel een verschil zal zijn tussen de groep met en zonder onboarding en usability elementen. Na uitvoering van de $\chi^2$-test is er echter geen significante relatie merkbaar tussen het al dan niet aanwezig zijn van learnability-elementen en indien de participant de applicatie zou houden op zijn of haar persoonlijk toestel, $\chi^2 (1, N = 25) = 1.92$, $p = 0.17$, $ns$. De gebruiker die toegang had tot onboarding en help-elementen was dus niet meer geneigd de applicatie te houden dan de gebruiker die hiertoe geen toegang had. Een verklaring hiervoor kan zijn dat een hele hoop meer factoren hierop inspelen. Deze proef is bijvoorbeeld uitgevoerd bij participanten waarvan niet iedereen op zoek was naar een applicatie met deze functionaliteit De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-3}.
+In figuur~\ref{fig:beschrijving-would-keep} is te merken dat er eventueel een verschil zal zijn tussen de groep met en zonder onboarding en usability elementen. Na uitvoering van de $\chi^2$-test is er echter geen significante relatie merkbaar tussen het al dan niet aanwezig zijn van learnability-elementen en indien de participant de applicatie zou houden op zijn of haar persoonlijk toestel, $\chi^2 (1, N = 25) = 1.92$, $p = 0.17$, $ns$. De gebruiker die toegang had tot onboarding en help-elementen was dus niet meer geneigd de applicatie te houden dan de gebruiker die hiertoe geen toegang had. Een verklaring hiervoor kan zijn dat een hele hoop meer factoren hierop inspelen. Deze proef is bijvoorbeeld uitgevoerd bij participanten waarvan niet iedereen op zoek was naar een applicatie met deze functionaliteit. Verder onderzoek kan hier meer duidelijkheid en een gunstiger resultaat bieden.
+
+\textit{De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-3}.}
 
 \section[Onderzoeksvraag 4]{Onderzoeksvraag 4: Hoe de eindgebruiker wegwijs maken in een grote applicatie?}
 \label{sec:onderzoeksvraag-4}
@@ -72,6 +78,8 @@ Hoe een gebruiker omgaat met de functionaliteiten binnen de applicatie is één 
 \end{figure}
 
 Om de gebruiker niet aan zijn of haar lot over te laten is het mogelijk om deze in de onboarding al enkele taken te laten voltooien vooraleer aan het echte werk te beginnen. In de proof-of-concept applicatie was het mogelijk om een naam in te stellen, dit kon zowel in de instellingen als in de onboarding (zie figuur~\ref{fig:piggy:name}). In de proef viel op dat enkel participanten die de proof-of-concept applicatie met onboarding hadden de naam ook effectief wijzigden (zie figuur~\ref{fig:beschrijving-changed-name}). De relatie tussen het instellen van een naam en de aanwezigheid onboarding-elementen is significant, $\chi^2 (1, N = 25) = 25$, $p = < .001$. De gebruiker is dus meer geneigd bepaalde opdrachten te voltooien indien deze de kans krijgt om dit in de onboarding van de applicatie te doen.
+
+\textit{De berekening van deze waarden in R is bijgevoegd in bijlage~\ref{bijlage:r-4}.}
 
 \begin{figure}[h!]
 	\centering
