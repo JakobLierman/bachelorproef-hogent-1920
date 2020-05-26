@@ -1,0 +1,3 @@
+[submodule "piggy"]
+	path = piggy
+	url = git@github.com:JakobLierman/piggy.git
