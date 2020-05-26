@@ -1,7 +1,5 @@
 # Een gebruiker wegwijs maken doorheen een applicatie van aanzienlijke omvang
 
-> Work in progress 👨🏻‍💻
-
 **HoGent Faculteit Bedrijf en Organisatie**
 
 Promotor: Karine Samyn
